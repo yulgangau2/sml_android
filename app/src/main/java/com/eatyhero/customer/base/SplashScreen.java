@@ -21,6 +21,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.eatyhero.customer.R;
 import com.eatyhero.customer.common.LoginSession;
@@ -38,6 +39,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
+
+import timber.log.Timber;
 
 public class SplashScreen extends BaseActivity implements ServerListener {
 
@@ -159,7 +162,6 @@ public class SplashScreen extends BaseActivity implements ServerListener {
 
         @Override
         protected String doInBackground(String... params) {
-
             try {
                 newVersion = Jsoup.connect("https://play.google.com/store/apps/details?id=com.eatyhero.customer&hl=en")
                         .timeout(30000)
@@ -183,7 +185,6 @@ public class SplashScreen extends BaseActivity implements ServerListener {
             try {
                 PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
                 String version = pInfo.versionName;
-
                 Log.e("version", version);
 
                 if (newVersion != null && !newVersion.isEmpty()) {

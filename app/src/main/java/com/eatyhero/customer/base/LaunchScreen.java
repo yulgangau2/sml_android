@@ -166,7 +166,6 @@ public class LaunchScreen extends BaseActivity implements ServerListener {
 
     @Override
     public void onSuccess(Object result, RequestID requestID) {
-
         SettingsList settingsList = (SettingsList) result;
 
         if (settingsList != null && settingsList.result != null && settingsList.result.sitesettings != null) {
@@ -289,9 +288,7 @@ public class LaunchScreen extends BaseActivity implements ServerListener {
     }
 
     public void siteSettings() {
-
         if (checkInternet()) {
-            Log.e("sitesetting", "sitesetting");
             Map<String, String> params = new HashMap<>();
             if (loginSession.isLoggedIn()) {
                 params.put("customer_id", loginSession.getUserId());
