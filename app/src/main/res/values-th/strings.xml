@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pintogogo</string>
+    <!-- <string name="facebook_app_id">201598150307349</string>-->
+    <string name="facebook_app_id">258809508225702</string>
+    <string name="CurrencySymbol">$</string>
+    <string name="Sender_Id">463266926227</string>
+    <string name="TeliverId">d82d2a8dbf9f4721722b2c2a3cc1a8c5</string>
+    <string name="btnTxtTracker">ตติดตามการจัดส่ง</string>
+
+    <string name="PleaseEnterCardNumber">โปรดระบุหมายเลขบัตรเครดิต</string>
+    <string name="PleaseEnterCardHoldername">ระบุชื่อผู้ถือบัตรเครดิต</string>
+    <string name="PleaseEnterExpiryYear">ระบุปีที่หมดอายุ</string>
+    <string name="PleaseEnterexpiryMonth">ระบุเดือนที่หมดอายุ</string>
+    <string name="PleaseEnterCvvnumber">ระบุหมายเลขCVV</string>
+    <string name="PleaseEnterTheAmount">ระบุจำนวนเงิน</string>
+    <string name="PleaseEnterTheAmountGrater">โปรดระบุจำนวนให้มากกว่า0</string>
+    <string name="CardHolderName">ชื่อผู้ถือบัตร</string>
+    <string name="Month">เดือน</string>
+    <string name="Year">ปี</string>
+    <string name="CVV">CVV</string>
+    <string name="MONTH">เดือน</string>
+    <string name="YEAR">ปี</string>
+
+    <string name="TheCardNumberInvalid">หมายเลขบัตรไม่ถูกต้อง</string>
+    <string name="TheCVVInvalid">หมายเลขCVVไม่ถูกต้อง</string>
+    <string name="CardInvalid">Tข้อมูลในบัตรไม่ถูกต้อง</string>
+    <string name="TheExpirationDateInvalid">วันหมดอายุไม่ถูกต้อง</string>
+    <string name="AreYouSureConfirm">ยืนยันเพิ่มบัตรใบนี้หรือไม่</string>
+    <string name="Yes">ใช่</string>
+
+    <string name="ValidThrough">ใช้ได้จนถึง</string>
+    <string name="Payment">การชำระเงิน</string>
+    <string name="CardManagement">ตั้งค่าบัตรเครดิต</string>
+    <string name="Delete">ลบ</string>
+    <string name="DeleteCard">ยืนยันที่จะลบบัตรเครดิตนี้หรือไม่</string>
+    <string name="SuccessDeleteCard">ลบบัตรเครดิตสำเร็จ</string>
+    <string name="FailedMessage">มีความผิดพลาดบางอย่างกรุณาเริ่มใหม่</string>
+    <string name="CardAddeddMessage">เพิ่มบัตรเครดิตสำเร็จ</string>
+
+    <string-array name="Month">
+        <item>Month</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="Year">
+        <item>Year</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+    </string-array>
+
+    <string-array name="Timehour">
+        <item>Select Time</item>
+        <item>12:00 AM</item>
+        <item>12:15 AM</item>
+        <item>12:30 AM</item>
+        <item>12:45 AM</item>
+        <item>01:00 AM</item>
+        <item>01:15 AM</item>
+        <item>01:30 AM</item>
+        <item>01:45 AM</item>
+        <item>02:00 AM</item>
+        <item>02:15 AM</item>
+        <item>02:30 AM</item>
+        <item>02:45 AM</item>
+        <item>03:00 AM</item>
+        <item>03:15 AM</item>
+        <item>03:30 AM</item>
+        <item>03:45 AM</item>
+        <item>04:00 AM</item>
+        <item>04:15 AM</item>
+        <item>04:30 AM</item>
+        <item>04:45 AM</item>
+        <item>05:00 AM</item>
+        <item>05:15 AM</item>
+        <item>05:30 AM</item>
+        <item>05:45 AM</item>
+        <item>06:00 AM</item>
+        <item>06:15 AM</item>
+        <item>06:30 AM</item>
+        <item>06:45 AM</item>
+        <item>07:00 AM</item>
+        <item>07:15 AM</item>
+        <item>07:30 AM</item>
+        <item>07:45 AM</item>
+        <item>08:00 AM</item>
+        <item>08:15 AM</item>
+        <item>08:30 AM</item>
+        <item>08:45 AM</item>
+        <item>09:00 AM</item>
+        <item>09:15 AM</item>
+        <item>09:30 AM</item>
+        <item>9.:5 AM</item>
+        <item>10:00 AM</item>
+        <item>10:15 AM</item>
+        <item>10:30 AM</item>
+        <item>10:45 AM</item>
+        <item>11:00 AM</item>
+        <item>11:15 AM</item>
+        <item>11:30 AM</item>
+        <item>11:45 AM</item>
+        <item>12:00 PM</item>
+        <item>12:15 PM</item>
+        <item>01:00 PM</item>
+        <item>01:15 PM</item>
+        <item>01:30 PM</item>
+        <item>01:45 PM</item>
+        <item>02:00 PM</item>
+        <item>02:15 PM</item>
+        <item>02:30 PM</item>
+        <item>02:45 PM</item>
+        <item>03:00 PM</item>
+        <item>03:15 PM</item>
+        <item>03:30 PM</item>
+        <item>03:45 PM</item>
+        <item>04:45 PM</item>
+        <item>05:00 PM</item>
+        <item>05:15 PM</item>
+        <item>05:30 PM</item>
+        <item>05:45 PM</item>
+        <item>06:00 PM</item>
+        <item>06:15 PM</item>
+        <item>06:30 PM</item>
+        <item>06:45 PM</item>
+        <item>07:00 PM</item>
+        <item>07:15 PM</item>
+        <item>07:30 PM</item>
+        <item>07:45 PM</item>
+        <item>08:00 PM</item>
+        <item>08:15 PM</item>
+        <item>08:30 PM</item>
+        <item>08:45 PM</item>
+        <item>09:00 PM</item>
+        <item>09:15 PM</item>
+        <item>09:30 PM</item>
+        <item>09:45 PM</item>
+        <item>10:00 PM</item>
+        <item>10:15 PM</item>
+        <item>10:30 PM</item>
+        <item>10:45 PM</item>
+        <item>11:00 PM</item>
+        <item>11:15 PM</item>
+        <item>11:30 PM</item>
+        <item>11:45 PM</item>
+    </string-array>
+    <string name="title_activity_maps">แผนที่</string>
+
+
+    <!-- LoginPage-->
+
+
+    <!--On Going Orders-->
+
+    <!--Order view-->
+
+    <!-- Profile-->
+
+    <!--  New order-->
+
+    <!--Map page-->
+
+    <!--Notification-->
+
+
+    <string name="txtorderplaced">ออเดอร์สำเร็จแล้ว</string>
+    <string name="txtPackageDispatched">ออเดอร์ของคุณได้ถูกจัดส่งออกไปแล้ว</string>
+    <string name="txtOnRoute">Order Picked Up   <u>Track With Teliver</u></string>
+    <string name="txtOrderDeivered">Order T \'elivered</string>
+    <string name="txtInKitchen">ยืนยันออเดอร์</string>
+    <string name="txtDeliveryDetails">ยืนยันออเดอร์</string>
+    <string name="txtName">ชื่อ</string>
+    <string name="txtCart">ตะกร้า</string>
+    <string name="txtOrder">ออเดอร์</string>
+    <string name="txtAddress">สถานที่จัดส่ง</string>
+    <string name="txtMobile">เบอร์โทร</string>
+    <string name="txtCartItems">รายการออเดอร์</string>
+    <string name="txtStartTracking">เริ่มติดตาม</string>
+    <string name="txtPaymentSuccess">ได้รับออเดอร์แล้ว</string>
+    <string name="txtOrderConfirmed">ออเดอร์ได้รับการยืนยันแล้ว</string>
+    <string name="txtTeliverId">กรอกหมายเลขติดตามลงในใบรายการสั่งซื้อ</string>
+    <string name="txtNearYou">สถานที่สำคัญที่อยู่ใกล้ตำแน่งที่จัดส่ง(ดูในแผนที่)</string>
+    <string name="txtFoodHint">อาหารอร่อยกำลังเดินทางไปหาคุณถึงที่</string>
+    <string name="txtProcessing">ออเดอร์อยู่ระหว่างการจัดเตรียม</string>
+    <string name="txtOutToDelivery">ออเดอร์อยู่ระหว่างจัดส่งและท่านสามารถติดตามการส่งได้เลยในตอนนี้</string>
+    <string name="txtNearDoorPush">ออเดอร์ได้การยืนยันจากร้านแล้วอีกไม่นานเราจะส่งอาหารไปถึงที่อยู่ของท่าน</string>
+    <string name="txtDeliveredPush">ออเดอร์ได้รับการส่งเรียบร้อยแล้ว</string>
+    <string name="txtDeliveryAssigned">ออเดอร์ได้รับการยืนยันจากร้านแล้วขณะนี้พนักงานขับรถมารับอาหาร</string>
+
+    <string name="txtSubTotal">รวมค่าอาหาร</string>
+    <string name="txtResPromo">รหัสคูปอง</string>
+    <string name="txtTaxes">ภาษีและค่าบริการ (18%)</string>
+    <string name="txtFinaltotal">คุณชำระเงินแล้ว</string>
+    <string name="symbolRupee">₹</string>
+    <string name="txtorderID">หมายเลขออเดอร์</string>
+    <string name="oderId">164752266</string>
+    <string name="txtPaymentMode">รูปแบบการชำระเงิน</string>
+    <string name="paymentMode">ชำระด้วยบัตรเครดิต</string>
+    <string name="txtPackingCharge">ค่าบรรจุภัณฑ์สินค้า</string>
+    <string name="txtDeliveryCharge">ค่าส่ง</string>
+
+
+    <!-- Location Page-->
+    <string name="welcome">สวัสดี!</string>
+    <string name="whatcan">วันนี้</string>
+    <string name="weServeYou">ให้เรา</string>
+    <string name="today">เสริฟ์อะไรดี?</string>
+    <string name="searchByCity">ค้นหาชื่อจังหวัด</string>
+    <string name="SearchByRestaurant">ค้นหาชื่อร้าน</string>
+    <string name="searchByCuisine">ค้นหาอาหารและบริการ</string>
+    <string name="selectRestaurant">ระบุชื่อร้าน</string>
+    <string name="selectCuisine">เลือกประเภทอาหารและบริการ</string>
+    <string name="selectCity">เลือกจังหวัด</string>
+    <string name="selectArea">เลือกพื้นที่หรือโซน</string>
+    <string name="search">ค้นหา</string>
+    <string name="searchMenu">ค้นหาเมนู</string>
+    <string name="or">หรือ</string>
+    <string name="useCurrentLocation">ค้นหาร้านใกล้ฉัน</string>
+    <string name="location">ร้านค้า</string>
+    <string name="basket">ตะกร้า</string>
+    <string name="orders">ประวัติการสั่ง</string>
+    <string name="favorite">เมนูโปรด</string>
+    <string name="account">บัญชีฉัน</string>
+
+    <!-- Login Page-->
+    <string name="email">อีเมล์</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="show">แสดง</string>
+    <string name="rememberMe">จดจำฉัน</string>
+    <string name="forgotPassword">ลืมรหัสผ่าน</string>
+    <string name="login">ล็อกอิน</string>
+    <string name="oor">หรือ</string>
+    <string name="socialAccount">เข้าสู่ระบบโดยใช้บัญชี</string>
+    <string name="faceBook">เข้าสู่ระบบด้วย Facebook</string>
+    <string name="google">เข้าสู่ระบบด้วย Google</string>
+    <string name="newUser">ผู้ใช้งานใหม่?</string>
+    <string name="hide">ซ่อน</string>
+
+    <!-- Signup Page-->
+    <string name="firstName">ชื่อ</string>
+    <string name="lastName">นามสุกล</string>
+    <string name="emailSmall">อีเมล์</string>
+    <string name="mobileNumbers">เบอร์โทร</string>
+    <string name="passwordSmall">รหัสผ่าน</string>
+    <string name="confirmPassword">ยืนยันรหัสผ่าน</string>
+    <string name="referralCode">โค้ดส่งต่อเพื่อรับส่วนลด</string>
+    <string name="signIn">ลงชื่อ</string>
+    <string name="signUp">ลงชื่อ</string>
+
+
+    <!-- More Page-->
+    <string name="more">ข้อมูลบัญชีของฉัน</string>
+    <string name="action">ตั้งค่า</string>
+    <string name="profile">ชื่อและเบอร์โทร</string>
+    <string name="myAddress">ที่จัดส่ง</string>
+    <string name="changePassword">เปลี่ยนรหัสผ่าน</string>
+    <string name="cardManagement">บัตรเครดิต</string>
+    <string name="rewardPoint">คะแนนสะสม</string>
+    <string name="wallet">กระเป๋าเงิน</string>
+    <string name="tableHistory">ประวัติการจองโต๊ะ</string>
+    <string name="info">ข้อมูลร้าน</string>
+    <string name="termsConditions">เงื่อนไขและข้อกำหนด</string>
+    <string name="privacyPolicy">นโยบายความเป็นส่วนตัว</string>
+    <string name="logout">ออกจากระบบ</string>
+
+
+    <!-- Profile Page-->
+    <string name="myProfile">ข้อมูลของฉัน</string>
+    <string name="changePhoto">เปลี่ยนรูปภาพ</string>
+    <string name="phone">เบอร์โทร</string>
+    <string name="update">บันทึก</string>
+
+    <!-- Add Address Page-->
+    <string name="addressTitle">ชื่อหมู่บ้าน/อพาร์ทเม้นท์/สถานที่ทำงาน</string>
+    <string name="doorNo">เลขที่บ้าน/เลขที่ห้องพัก/แผนกที่ทำงาน</string>
+    <string name="addressPhone">โทรศัพท์</string>
+    <string name="address">ปักหมุดบนแผนที่เพื่อระบุตำแน่งที่จัดส่ง</string>
+    <string name="submit">บันทึก</string>
+
+    <!-- AddressBook Page-->
+    <string name="addAddress">เพิ่มที่จัดส่งใหม่</string>
+
+    <!-- Change Password Page-->
+    <string name="oldPassword">รหัสผ่านเดิม</string>
+    <string name="newPassword">รหัสผ่านใหม่</string>
+
+    <!-- Add Card Page-->
+    <string name="cardholderName">ชื่อผู้ถือบัตร</string>
+    <string name="cardNumber">หมายเลขบัตร</string>
+    <string name="cardAddress">ระบุที่อยู่</string>
+    <string name="month">เดือน</string>
+    <string name="year">ปี</string>
+    <string name="cvv">CVV</string>
+
+    <!-- Card Management Page-->
+    <string name="noCardAvail">ยังไม่มีข้อมูลบัตร</string>
+
+    <!-- Custom add Card Page-->
+    <string name="saveMyCardDetails">บันทึกบัตรของฉัน</string>
+    <string name="pay">ชำระเงิน</string>
+    <string name="delete">ลบ</string>
+
+    <!-- My Wallet Toolbar -->
+    <string name="walletHistory">ประวัติการใช้กระเป๋าเงิน</string>
+    <string name="myBalance">ยอดคงเหลือ</string>
+
+    <!-- Add Wallet Page -->
+    <string name="enterAmount">ระบุจำนวนเงิน</string>
+    <!--<string name="add">Add</string>-->
+
+    <!-- Add Money to Wallet Page -->
+    <string name="addMoney">เติมเงิน</string>
+    <string name="addAmount">ระบุจำนวนเงิน</string>
+    <string name="amount">จำนวน</string>
+    <string name="add">เพิ่ม</string>
+
+    <!-- Add to cart Page -->
+    <string name="menusize">ตัวเลือกเพิ่มเติม</string>
+    <string name="addons">เมนูเสริม</string>
+    <string name="yourInstruction">คำสั่งพิเศษ(ถ้ามี)</string>
+    <string name="addToCart">เพิ่มในตะกร้า</string>
+    <string name="mainAdonName">รายการเมนูเสริม</string>
+    <string name="minimumAndMaximum">Minimum : 5  maximum : 5</string>
+    <string name="cancel">ยกเลิก</string>
+
+    <!-- Add toolbar Page -->
+    <string name="selectAPickupAddress">เลือกที่อยู่สำหรับไปรับที่ร้าน</string>
+
+    <!-- base Home Page -->
+    <string name="restaurants">ร้านค้า</string>
+    <string name="order">ออเดอร์</string>
+
+    <!-- book table history Page -->
+    <string name="noTableHistory">ไม่มีประวัติการจองโต๊ะ</string>
+    <!-- book table layout Page -->
+    <string name="name">ชื่อ</string>
+    <!-- cart details fragment -->
+    <string name="yourBasketisEmpty">ยังไม่มีสินค้าในตระกร้าของคุณ</string>
+    <string name="addSomething">เริ่มสั่งตอนนี้เลยเพื่อความสุขที่เพิ่มขึ้น :)</string>
+    <string name="selectYourChoice">กรุณาเลือก</string>
+    <string name="orderSummary">สรุปรายการออเดอร์</string>
+    <string name="pickUp">รับที่ร้าน</string>
+    <string name="delivery">เดลิเวอรี่</string>
+    <string name="addYourInstructions">หมายเหตุการจัดส่ง(ถ้ามี)</string>
+    <string name="restaurantBill">รายการบิล</string>
+    <string name="subTotal">รวมค่าอาหาร</string>
+    <string name="tax">ค่าธรรมเนียม(0.00%)</string>
+    <string name="deliveryCharge">ค่าส่ง</string>
+    <string name="free">ฟรี</string>
+    <string name="discount">ส่วนลด(%10)</string>
+    <string name="voucher">บัตรกำนัล</string>
+    <string name="redeemAmount">จำนวนแต้มที่ใช้แลก</string>
+    <string name="totalPayable">ยอดชำระทั้งหมด</string>
+    <string name="haveCouponCode">กรอกโค้ดส่วนลด</string>
+    <string name="EnteraCouponCodeHere">ระบุรหัสคูปอง</string>
+    <string name="apply">ตกลง</string>
+    <string name="addMoreMenu">สั่งเมนูอื่นเพิ่ม</string>
+    <string name="proceedToCheckout">ดำเนินการต่อ</string>
+
+    <!-- change Pickup Layout -->
+    <string name="select">เลือก</string>
+
+    <!-- change Pickup Layout -->
+    <string name="totalAmount">ยอดชำระสุทธิรวมค่าส่งแล้ว</string>
+    <!-- common toolbar layout -->
+    <string name="restaurantList">รายชื่อร้าน</string>
+    <!-- common addons layout -->
+    <string name="mainAddons">รายการเมนูเสริม</string>
+    <!-- custom checkout layout -->
+    <string name="selectYourCard">เลือกบัตรของคุณ</string>
+    <string name="CardNumber">หมายเลขบัตรเครดิต</string>
+    <string name="ValidThru">ใช้ได้จนถึง</string>
+    <string name="date">วัน/เดือน/ปีเช่น04/06/2019</string>
+
+    <string name="menuName">ชื่อเมนู</string>
+    <!-- custom checkout layout -->
+    <string name="closed">ปิดพรีออเดอร์ได้</string>
+    <!-- custom restaurant Type list -->
+    <string name="all">ทั้งหมด</string>
+    <!-- custom spinner text list -->
+    <string name="selectTime">ระบุเวลา</string>
+    <!-- custom swipe card list -->
+    <string name="nocard">หมายบัตร</string>
+    <!-- custom Table History Screen -->
+    <string name="orderName">หมายเลขออเดอร์</string>
+    <string name="customerName">ชื่อลูกค้า</string>
+    <string name="guestCount">จำนวนแขก</string>
+    <string name="deliveryDate">วันที่จัดส่ง</string>
+    <string name="bookingEmail">อีเมล์ที่ใช้จอง</string>
+    <string name="orderDate">วันที่ออเดอร์</string>
+    <string name="orderTime">เวลาที่ออเดอร์</string>
+    <string name="bookingPhone">หมายเลขโทศัพท์ที่จอง</string>
+    <string name="restaurantname">ชื่อร้าน</string>
+    <string name="bookingStatus">สถานะการจอง</string>
+    <string name="bookingDate">วันเวลาที่จอง</string>
+
+    <!-- Dialog for alert -->
+    <string name="alert">Alert!!</string>
+    <string name="exitTheApp">คุณต้องการเลิกใช้แอปปิ่นโตโกโกใช่หรือไม่</string>
+    <string name="yes">ใช่</string>
+    <string name="no">ไม่</string>
+    <!-- Dialog for alert Sub -->
+    <string name="notEnough">กรุณาสั่งอาหารให้มากว่ามูลค่าของบัตรกำนัล</string>
+    <string name="ok">ตกลง</string>
+    <!-- Dialog for Choose Image -->
+    <string name="takeAPhoto">ถ่ายรูป</string>
+    <string name="fromGallery">เลือกรูปภาพจากแกลอรี่</string>
+    <!-- Dialog replace Cart -->
+    <string name="replaceCart">คุณต้องการเปลี่ยนสินค้าในตะกร้าหรือไม่</string>
+    <!-- FAvourite Screen -->
+    <!--<string name="favorite">Favorite</string>-->
+    <string name="favouriteList">รายการโปรด</string>
+    <string name="pleaseLoginOrRegister">กรุณาล็อกอินก่อน</string>
+    <string name="LoginOrRegister">ล็อกอินหรือลงทะเบียนใหม่</string>
+    <string name="favoriteMenu">เมนูโปรด</string>
+    <string name="FavoriteRestaurant">ร้านโปรด</string>
+    <string name="noResult">ค้นหาไม่พบ</string>
+    <string name="item">รายการ</string>
+    <string name="ViewCart">ดูตะกร้า</string>
+
+    <!-- foodOrdering Toolbar AddAddress -->
+    <string name="addressBook">ที่จัดส่งที่บันทึกไว้</string>
+
+    <!-- forgot Password Screen -->
+    <string name="forgotPasswordTitle">ลืมรหัสผ่าน</string>
+
+    <!-- Home Screen -->
+    <string name="filter">กรอง</string>
+    <string name="reset">ยกเลิก</string>
+    <string name="filterByOrder">กรองจากประเภทการสั่ง</string>
+    <!--<string name="all">All</string>-->
+    <string name="Collection">ร้านที่สั่งกลับบ้าน</string>
+    <string name="reserveTable">ร้านที่รับจองโต๊ะ</string>
+    <!--<string name="delivery">Delivery</string>-->
+    <string name="filterByDistance">กรองโดยใช้ระยะทาง</string>
+    <string name="filterByRating">กรองโดยใช้คะเเนนรีวิว</string>
+    <string name="averageRating">คะเเนนรีวิวเฉลี่ย</string>
+    <string name="chooseYourCuisine">ประเภทอาหารและบริการ</string>
+    <string name="applyFilter">ตกลง</string>
+
+    <!-- info fragment Screen -->
+    <string name="openCloseTime">เวลาเปิดปิด</string>
+
+    <!-- layout Completed Screen -->
+    <string name="deliveredSuccessfull">ออเดอร์จัดส่งได้สำเร็จ</string>
+    <!-- Map Screen -->
+    <string name="searchByAddress">เลือกตำแหน่งจัดส่ง</string>
+    <!--<string name="address">Address</string>-->
+    <string name="findRestaurant">ค้นหาร้าน</string>
+    <!-- Menu Customer MainCategory Screen -->
+    <string name="deals">ดีลพิเศษ</string>
+    <!-- My Wallet Custom Screen -->
+    <string name="purpose">เป้า</string>
+    <string name="dateName">วันที่</string>
+    <string name="transactionType">ประเภทการทำรายการ</string>
+    <string name="transactionDetails">ข้อมูลการทำรายการ</string>
+
+    <!--New CheckOut Screen -->
+    <string name="addressInfo">ข้อมูลสถานที่จัดส่ง</string>
+    <string name="addNewAddress">เพิ่มที่จัดส่งใหม่</string>
+    <string name="enterNewAddress">กรุณาระบุสถานที่จัดส่งก่อนสั่งอาหาร</string>
+    <string name="selectDateAndTime">เลือกวันและเวลาส่ง</string>
+    <string name="now">ตอนนี้</string>
+    <string name="later">เวลาอื่น</string>
+    <!--<string name="wallet">Wallet</string>-->
+    <string name="useYourWallet">ชำระด้วยกระเป๋าเงิน(Wallet)</string>
+    <string name="loadMoney">เติมเงิน</string>
+    <string name="loadMoneytoWallet">เติมเงินในกระเป๋าเงิน</string>
+    <string name="creaditAndDebit">เลือกชำระด้วยบัตรเครดิต</string>
+    <string name="addNewCard">เพิ่มบัตรใหม่</string>
+    <string name="enterCardDetails">ระบุรายละเอียดของบัตร</string>
+    <string name="payOnDelivery">เลือกชำระเงินปลายทาง</string>
+    <string name="cod">ชำระด้วยเงินสดปลายทาง</string>
+    <string name="pleaseKeepExactChange">ชำระเงินสดหรือ QR code</string>
+    <string name="otherPayments">ชำระเงินด้วยวิธีอื่น</string>
+    <string name="paypal">ชำระด้วย PayPal</string>
+    <string name="proceed">ยืนยันรายการชำระเงิน</string>
+    <!--Order History custom -->
+    <string name="trackOrder">ติดตามรถ</string>
+    <string name="accepted">ร้านรับออเดอร์แล้ว</string>
+    <string name="review">รีวิว</string>
+    <!--Order History Screen -->
+    <string name="previousOrders">ก่อนสั่งอาหารหรือเครื่องดื่ม</string>
+    <string name="pleaseLoginOrRegisterRecentOrders">กรุณาล็อกอินหรือลงทะเบียนผู้ใช้ก่อน</string>
+    <!--Order History Screen -->
+    <string name="trackOrderTitle">ติดตามการจัดส่ง</string>
+    <!--Order View Screen -->
+    <string name="orderInformation">ข้อมูลรายการออเดอร์</string>
+    <string name="orderNumber">หมายเลขออเดอร์</string>
+    <string name="paymentType">ประเภทการชำระเงิน</string>
+    <string name="cashOnDelivery">ชำระเงินเมื่อรับอาหาร</string>
+    <string name="orderType">ประเภทการออเดอร์</string>
+    <!--<string name="deliveryDate">Delivery date</string>-->
+    <string name="DeliveryTime">เวลาจัดส่ง</string>
+    <!--<string name="orderDate">Order Date</string>-->
+    <!--<string name="orderTime">Order time</string>-->
+    <string name="orderStatus">สถานะออเดอร์</string>
+    <string name="paymentStatus">สถานะการชำระเงิน</string>
+    <string name="items">รายการ</string>
+    <string name="price">ราคา</string>
+    <string name="qty">จำนวน</string>
+    <string name="total">ยอดชำระทั้งหมด</string>
+    <string name="taxes">ค่าธรรมเนียม</string>
+    <string name="tip">ทิป</string>
+    <string name="restaurantInformation">ข้อมูลร้าน</string>
+    <string name="restaurantName">ชื่อร้านอาหาร</string>
+    <string name="restaurantAddress">ที่อยู่ร้าน</string>
+    <string name="restaurantMobile">เบอร์โทรร้าน</string>
+    <string name="customerinformation">ข้อมูลลูกค้า</string>
+    <string name="customerAddress">ที่อยู่ลูกค้า</string>
+    <string name="customerMobile">เบอร์โทรลูกค้า</string>
+    <string name="customerEmail">อีเมล์ลูกค้า</string>
+    <string name="instruction">คำสั่งเพิ่มเติม</string>
+    <!--Payment Screen -->
+    <string name="cardStripe">บัตรเครดิต</string>
+    <string name="newCards">บัตรใหม่</string>
+    <string name="savedCards">บันทึกบัตร</string>
+    <string name="enterYourCardAddress">กรอกที่อยู่ของบัตร</string>
+    <string name="postalCode">รหัสไปรษณีย์</string>
+    <string name="saveCardoptional">บันทึกบัตร(ไม่ระบุก็ได้)</string>
+    <string name="enterTipAmount">ระบุจำนวนทิป</string>
+    <!--Rating Dialog -->
+    <string name="yourReviewPlease">กรุณารีวิว</string>
+    <string name="yourMessage">ข้อความของคุณ</string>
+    <string name="rate">คะแนน</string>
+    <!--Restaurant Details Screen -->
+    <string name="categories">รายการเมนู</string>
+    <string name="minimumOrder">สั่งขั้นต่ำ</string>
+    <string name="distance">ระยะทาง</string>
+    <string name="deliveryFee">ค่าส่ง</string>
+    <string name="menu">เมนู</string>
+    <string name="Info">ข้อมูลร้าน</string>
+    <string name="offer">ส่วนลด</string>
+    <string name="rewards">คะแนนสะสม</string>
+    <string name="yourOffers">ส่วนลดสำหรับคุณ</string>
+    <string name="firstOffer">ส่วนลดเมื่อใช้ครั้งแรก</string>
+    <string name="normalOffer">ส่วนลดปกติ</string>
+    <string name="freeDelivery">ส่งฟรีไม่มีขั้นต่ำ</string>
+    <string name="customerReview">รีวิวจากลูกค้า</string>
+    <string name="yourReward">คะแนนสะสมของคุณ</string>
+    <string name="rewardPoints">คะแนน</string>
+    <string name="viewCart">ดูตะกร้า</string>
+
+
+    <!--Restaurant List Screen -->
+    <string name="searchByName">ค้นหาจากชื่อร้าน</string>
+    <string name="filterByPromotion">กรองโดยใช้โปรโมชั่น</string>
+    <string name="chooseRestaurantType">ประเภทร้านค้า</string>
+    <!--Restaurant Menu Fragment -->
+    <string name="deal">ดีลพิเศษ</string>
+    <string name="cart">ตะกร้าสินค้า</string>
+    <string name="bookATable">จองโต๊ะ</string>
+    <!--Restaurant offer Screen -->
+    <string name="offerIsAvailable">ขณะนี้มีส่วนลดอยู่</string>
+    <string name="noOfferFound">ไม่พบร้านที่ส่วนลด</string>
+    <!--Restaurant review Screen -->
+    <string name="noReviews">ไม่มีรีวิว</string>
+
+    <!--Java Java Java Java Java Java Java Java Java Java Java Java Java Java Java -->
+    <!--Login Fragment -->
+    <string name="pleaseEnterYourEmail">กรุณาระบุอีเมล์</string>
+    <string name="PleaseEnterValidEmail">กรุณาระบุอีเมล์ให้ถูกต้อง</string>
+    <string name="pleaseEnterYourPassword">กรุณาใส่รหัส</string>
+    <string name="cantFetchEamil">ไม่พบอีเมล์ของคุณจากบัญชีเฟชบุ๊คกรุณาสมัครใหม่โดยใช้อีเมล์อื่นแทน</string>
+    <!--Profile Screen -->
+    <string name="takePhoto">ใช้รูปภาพ</string>
+    <string name="chooseFromLibrary">เลือกจากแกลลอรี่</string>
+    <string name="pleaseEnterYourFirstName">ระบุชื่อ</string>
+    <string name="pleaseEnterYourLastName">ระบุนามสกุล</string>
+    <string name="pleaseEnterPhoneNumber">เบอร์โทร</string>
+    <!--Signup Screen -->
+    <string name="pleaseEnterConfirmPasssword">เบอร์โทร</string>
+    <string name="passwordMismatch">เบอร์โทร</string>
+    <!--Signup Screen -->
+    <string name="driverPosition">ตำแหน่งของคนขับ</string>
+    <string name="currentPosition">ตำแหน่งปัจจุบัน</string>
+    <string name="permissionDenied">ไม่ได้รับสิทธิ์การเข้าถึง</string>
+    <!--BaseActivity Screen -->
+    <string name="OK">ตกลง</string>
+    <string name="checkInternetConnection">กรุณาเช็คการเชื่อมต่ออินเตอร์เน็ต</string>
+    <string name="permissionNecessary">จำเป็นต้องขออนุญาตเข้าถึง</string>
+    <string name="locationPermissionIsNecessary">จำเป็นต้องขออนุญาตเข้าถึงอุปกรณ์</string>
+    <string name="externalStoragePermission">จำเป็นต้องขออนุญาตเข้าถึงอุปกรณ์เก็บข้อมูล</string>
+    <string name="camerPermissionIsNecessary">จำเป็นต้องขออนุญาตเข้าถึงกล้องถ่ายรูป</string>
+    <!--Launch Screen -->
+    <string name="LocationFeatureDenied">ไม่ได้รับสิทธิ์การเข้าถึงบางอย่างอาจทำให้การทำงานแอปพลิเคชั่นบกพร่อง</string>
+    <!--NewLocation Screen -->
+    <string name="pleaseChoooseAnotherLocation">โปรดเลือกที่อยู่อื่น</string>
+    <string name="pleaseSelectAChoise">โปรดเลือก</string>
+    <string name="pleaseSelectCity">เลือกจังหวัด</string>
+    <string name="selectSubdistric">เลือกพื้นที่บริการ</string>
+    <string name="noCitiesFound">ไม่พบจังหวัดที่ค้นหากรุณาเลือกใหม่</string>
+    <string name="noRestaurantFound">ไม่พบร้านอาหารกรุณาระบุคำค้นหาใหม่</string>
+    <string name="noCuisineFound">ไม่พบประเภทอาหารกรุณาค้นหาใหม่</string>
+    <string name="gpsSettings">ตั้งค่าGPS</string>
+    <string name="gpsMessage">ระบบGPSปิดอยู่กรุณาไปที่เมนูตั้งค่าเพื่อเปิดระบบGPS</string>
+    <string name="settings">ตั้งค่า</string>
+
+    <!--CardDescription Screen -->
+    <string name="Tax">ค่าธรรมเนียม(</string>
+    <string name="Delivery">เดลิเวอรี่</string>
+    <string name="pickup">รับที่ร้าน</string>
+    <string name="loginToUseVoucher">กรุณาล็อกอินก่อนใช้บัตรกำนัลพิเศษ</string>
+    <string name="enterVoucherCode">โปรดระบุรหัสที่อยู่ในบัตรกำนัลพิเศษ</string>
+    <string name="restaurantMinimumOrder">ออเดอร์ขั้นต่ำ</string>
+    <string name="Offer">ส่วนลด(</string>
+    <string name="subTotalNotEnough">มูลค่าการสั่งอาหารยังไม่ถึงขั้นต่ำกรุณาสั่งเพิ่ม</string>
+    <string name="Voucher">บัตรกำนัลพิเศษ(</string>
+    <string name="youWillEarn">คุณจะได้รับคะแนนสะสม</string>
+    <string name="points">แต้ม</string>
+    <string name="RedeemAmount">แลกคะแนนสะสม (</string>
+    <string name="voucherNotApplicable">เงื่อนไขนี้ใช้บัตรกำนัลไม่ได้</string>
+    <string name="maximumAvailableQuantity">สูงสุดได้ถึง25รายการ</string>
+    <string name="minimumQuantity">ขั้นต่ำต้องมากกว่า1รายการ</string>
+    <string name="maximumQuantityOnly">สูงสุดคือ25รายการเท่านั้น</string>
+
+    <!--Checkout Screen -->
+    <string name="enterDate">กรุณาระบุวันที่</string>
+    <string name="selecttime">กรุณาระบุเวลา</string>
+    <string name="selectFuture">เลือกเวลาล่วงหน้า</string>
+    <string name="selectYourAddress">เลือกที่จัดส่ง</string>
+    <string name="anotherPaymentType">เลือกประเภทการชำระเงิน</string>
+    <string name="insufficientWalletAmount">ปริมาณเงินในกระเป๋ามีจำนวนไม่พอ</string>
+    <string name="limitIs3">เพิ่มบัตรได้สูงสุด3ใบกรุณาลบบัตรเดิมเพื่อเพิ่มบัตรใหม่</string>
+    <string name="selectAnyOnePayment">กรุณาเลือกประเภทการชำระเงินอย่างน้อย1ประเภท</string>
+    <string name="addressInfoFree">ค่าส่งตามที่อยู่ที่เลือก (</string>
+    <string name="Proceed">ยืนยันรายการชำระเงิน</string>
+    <string name="orderPlacedSuccessfully">ออเดอร์ของคุณสำเร็จแล้ว!!!</string>
+    <string name="Pay">ชำระเงิน (</string>
+    <string name="paymentConfirmationInfo">การชำระเงินผ่านPayPalสำเร็จแล้ว</string>
+    <string name="outOfDelivery">(นอกพื้นที่บริการ)</string>
+    <!--AddAddress Screen -->
+    <string name="editAddress">แก้ไขที่จัดส่ง</string>
+    <string name="enterTitle">ปักหมุดบนแผนที่เพื่อระบุตำแหน่งที่จัดส่ง</string>
+    <string name="enterDoorNumber">ระบุบ้านเลขที่/เลขห้องพัก/แผนกที่ทำงาน</string>
+    <string name="enterAddress">ระบุชื่อหมู่บ้าน/อพาร์ทเม้นท์/สถานที่ทำงาน</string>
+    <!--AddCard Screen -->
+    <string name="addCard">เพิ่มบัตรเครดิต</string>
+    <!--AddMoney Screen -->
+    <string name="enterTheAmount">ระบุจำนวน</string>
+    <string name="enterAmountGreater">โปรดระบุที่มากกว่า0</string>
+    <string name="selectCard">โปรดเลือกบัตรเครดิต</string>
+    <string name="moneyAddSuccess">เติมเงินสำเร็จ</string>
+    <!--AddMoneyToWallet Screen -->
+    <string name="addWallet">เติมเงินในกระเป๋า</string>
+    <string name="noInternet">ไม่ได้เชื่อมต่ออินเตอร์เน็ต!!!</string>
+    <string name="cardsExisting">เพิ่มบัตรได้สูงสุด3ใบกรุณาลบบัตรเดิมเพื่อเพิ่มบัตรใหม่</string>
+    <string name="cardHolderName">กรุณาเพิ่มชื่อผู้ถือบัตร</string>
+    <string name="expiryMonth">กรุณาระบุเดือนที่หมดอายุ</string>
+    <string name="expiryYear">กรุณาระบุปีที่หมดอายุ</string>
+    <string name="cvvNumber">ระบุรหัสCVVหลังบัตร</string>
+    <string name="cardNumberInvalid">หมายเลขบัตรไม่ถูกต้อง</string>
+    <string name="expirationdateInvalid">วันหมดอายุไม่ถูกต้อง</string>
+    <string name="CvvInvalid">รหัสCVVไม่ถูกต้อง</string>
+    <string name="cardDetailsInvalid">รายละเอียดบัตรไม่ถูกต้อง</string>
+    <string name="selectedCard">คุณเลือกบัตรนี้</string>
+    <string name="useThisToPay">ใช้บัตรนี้ชำระเงิน</string>
+    <!--AddressBook Screen -->
+    <string name="addressManagement">จัดการสถานที่จัดส่ง</string>
+    <string name="sureToDeleteAddress">คุณต้องการลบสถานที่จัดส่งนี้ใช่หรือไม่</string>
+    <!--Card Management Screen -->
+    <string name="noCards">ไม่พบบัตรเครดิต</string>
+    <string name="validTill">ใช้ได้จนถึง</string>
+    <string name="deleteCard">ลบบัตรเครดิต</string>
+    <!--ChangePassword Screen -->
+    <string name="enterNewPassword">กรุณากรอกรหัสผ่านใหม่</string>
+    <string name="enterValidPassword">กรุณากรอกรหัสผ่านให้ถูกต้อง</string>
+    <string name="enterOldPassword">กรุณากรอกรหัสผ่านเดิม</string>
+    <!--Info Screen -->
+    <string name="version">เวอร์ชั่น</string>
+
+    <string name="enterValidPhoneNumber">กรุณากรอกเบอร์โทร</string>
+
+    <string name="edit">แก้ไข</string>
+
+    <string name="RewardPoints">คะเเนนสะสม</string>
+    <string name="earnedPoints">คะเเนนสะสมที่ได้รับ :</string>
+
+    <string name="bookTableHistory">ประวัติการจองโต๊ะ</string>
+
+    <string name="paid">ชำระเงินแล้ว</string>
+    <string name="unpaid">ยังไม่ได้ชำระเงิน</string>
+    <string name="pickedUp">รับที่ร้านแล้ว</string>
+    <string name="driver">คนขับได้รับออเดอร์แล้ว</string>
+    <string name="selectRating">กรุณาให้คะแนนรีวิว</string>
+
+    <string name="routNotFound">กูเกิลไม่สามารถหาเส้นทางได้</string>
+
+    <string name="choose">กรุณาเลือก</string>
+    <string name="selectAnyoneOfMenu">กรุณาเลือกเมนูใดเมนูหนึ่ง</string>
+    <string name="Price">ราคา</string>
+    <string name="selectMinimumAddons">คุณต้องเลือกเมนูเสริมด้วย</string>
+    <string name="selectQuantity">โปรดระบุจำนวนที่ต้องการ</string>
+    <string name="menuAddedSuccessfully">เพิ่มเมนูสำเร็จ</string>
+    <string name="minimum1">ต้องเลือกอย่างน้อย1เมนู</string>
+    <string name="minimum">( อย่างน้อย :</string>
+    <string name="max">มากที่สุด :</string>
+    <string name="selectMaximum">คุณสามรถเลือกมากที่สุด</string>
+    <string name="addonsOnly">เมนูเสริมอย่างเดียว</string>
+    <!--BookATable Screen -->
+    <string name="selectCount">โปรดระบุจำนวน</string>
+    <string name="selectDate">กรุณาเลือกวันที่</string>
+    <string name="selectTiming">กรุณาเลือกเวลา</string>
+    <string name="enterCustomerNmae">กรุณาระบุชื่อ</string>
+    <string name="enterCustomerEmail">กรุณาระบุอีเมล์</string>
+    <string name="enterCustomerPhone">กรุณาระบุเบอร์โทร</string>
+    <string name="selectGuestCount">เลือกจำนวนแขก</string>
+
+    <!--Favourite Screen -->
+    <string name="noFavouriteMenu">คุณยังไม่มีเมนูโปรด</string>
+    <string name="noFavouriteRestaurant">คุณยังไม่มีร้านโปรด</string>
+    <string name="note">เตือน</string>
+    <string name="addedSomeItem">ตระกร้ามีสินค้าที่ค้างทำรายการอยู่ ท่านต้องการยกเลิกสินค้าที่ค้างอยู่นี้ เพื่อเลือกสินค้าใหม่ใช่หรือไม่</string>
+    <string name="cartContainsDishes">ในตะกร้าคุณมีสินค้าอยู่</string>
+    <string name="doUWantToDiscard">คุณต้องการยกเลิกรายการเดิมและเพิ่มรายการใหม่หรือไม่?</string>
+    <!--Orderview Screen -->
+    <string name="orderview">สรุปรายการออเดอร์</string>
+    <string name="thankUNote">\"ขอขอบคุณที่สั่งอาหารผ่านบริการของปิ่นโตโกโก  เรารับออเดอร์ของท่านแล้วและได้ส่งไปให้ร้าน\"</string>
+    <string name="noData">ไม่มีข้อมูลกรุณาระบุข้อมูลส่วนบุคล</string>
+    <string name="cardFee">ค่าธรรมเนียมบัตรเครดิต</string>
+    <string name="youEarned">คุณได้รับคะแนนสะสม</string>
+    <string name="pickupDate">วันที่มารับ</string>
+    <string name="pickupTime">เวลาที่มารับ</string>
+    <string name="deliverydate">วันที่จัดส่ง</string>
+    <string name="deliveryTime">เวลาจัดส่ง</string>
+    <string name="notpaid">ยังไม่ได้ชำระเงิน</string>
+
+    <!--RestaurantDetails Screen -->
+    <string name="Monday">วันจันทร์</string>
+    <string name="Tuesday">วันอังคาร</string>
+    <string name="Wednesday">วันพุธ</string>
+    <string name="Thursday">วันพฤหัสบดี</string>
+    <string name="Friday">วันศุกร์</string>
+    <string name="Saturday">วันเสาร์</string>
+    <string name="Sunday">วันอาทิตย์</string>
+    <string name="flat">ลด</string>
+    <string name="orderAbove">% เมื่อสั่งครั้งแรก ขั้นต่ำ</string>
+    <string name="makeAnOrder">ออเดอร์มากว่า</string>
+    <string name="freeDeliveryOffer">ฟรีค่าส่งอาหาร</string>
+    <string name="Closed">ปิด</string>
+    <!--RestaurantList Screen -->
+    <string name="preOrder">สั่งล่วงหน้า</string>
+    <string name="yourFirstOrder">% เมื่อสั่งครั้งแรก</string>
+    <string name="normalOfferText">% เมื่อสั่งครั้งแรก</string>
+    <string name="freeDeliveryOrderAbove">ส่งฟรีเมื่อสั่ง</string>
+
+
+    <string name="reOrder">สั่งใหม่</string>
+    <string name="time">เวลาส่ง</string>
+    <string name="register_as_partner_shop">ลงทะเบียนเปิดร้านในปิ่นโตโกโกฟรี</string>
+    <string name="register_to_driver">ลงทะเบียนสมัครพนักงานส่งอาหารฟรี</string>
+
+    <string name="failed">ออเดอร์ถูกยกเลิก</string>
+    <string name="driverAccepted">พนักงานจัดส่งรับออเดอร์แล้ว</string>
+    <string name="waiting">พนักงานกำลังไปที่ร้าน</string>
+    <string name="delivered">จัดส่งแล้ว</string>
+    <string name="collected">ออกร้านมาแล้ว</string>
+    <string name="pending">รอการยืนยันออเดอร์ </string>
+
+    <string name="asap">ส่งทันที</string>
+    <string name="book_table">จองโต๊ะ</string>
+
+    <string name="like">ถูกใจ</string>
+    <string name="comments">ความคิดเห็น</string>
+
+
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=
+        </item>
+    </string-array>
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
+        </item>
+    </string-array>
+
+
+    <string name="wantToEmptyCart">รถเข็นของคุณมีรายการจากร้านอาหารที่แตกต่างกันรถเข็นว่างเปล่าและดำเนินการต่อหรือไม่</string>
+
+</resources>

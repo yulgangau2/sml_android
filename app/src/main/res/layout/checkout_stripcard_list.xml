@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/payment_border">
+
+        <RadioButton
+            android:id="@+id/onlineButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layoutDirection="rtl"
+            android:layout_toRightOf="@+id/onlineImage"
+            android:layout_centerVertical="true"
+            android:text="Home Address"
+            android:layout_gravity="start"
+            android:textSize="12sp"
+            android:paddingLeft="15dp"
+            android:button="@drawable/checkout_radiobutton"
+            android:gravity="center_vertical"   />
+
+        <ImageView
+            android:id="@+id/onlineImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:src="@drawable/svg_master_card" />
+
+    </RelativeLayout>
+
+</LinearLayout>

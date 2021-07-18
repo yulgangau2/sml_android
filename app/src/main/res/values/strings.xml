@@ -1,0 +1,783 @@
+<resources>
+    <string name="app_name">Pintogogo</string>
+    <!-- <string name="facebook_app_id">201598150307349</string>-->
+    <string name="facebook_app_id">258809508225702</string>
+    <string name="CurrencySymbol">$</string>
+    <string name="Sender_Id">463266926227</string>
+    <string name="TeliverId">d82d2a8dbf9f4721722b2c2a3cc1a8c5</string>
+    <string name="btnTxtTracker">Track Your Order</string>
+
+    <string name="PleaseEnterCardNumber">Please enter card number</string>
+    <string name="PleaseEnterCardHoldername">Please enter card holder name</string>
+    <string name="PleaseEnterExpiryYear">Please enter expiry year </string>
+    <string name="PleaseEnterexpiryMonth">Please enter expiry month</string>
+    <string name="PleaseEnterCvvnumber">Please enter CVV number</string>
+    <string name="PleaseEnterTheAmount">Please enter the amount</string>
+    <string name="PleaseEnterTheAmountGrater">Please enter the amount Great than 0</string>
+    <string name="CardHolderName">Card Holder Name</string>
+    <string name="Month">Month</string>
+    <string name="Year">Year</string>
+    <string name="CVV">CVV</string>
+    <string name="MONTH">Month</string>
+    <string name="YEAR">Year</string>
+
+    <string name="TheCardNumberInvalid">The card number that you entered is invalid</string>
+    <string name="TheCVVInvalid">The CVC code that you entered is invalid</string>
+    <string name="CardInvalid">The card details that you entered are invalid</string>
+    <string name="TheExpirationDateInvalid">The Expiration date that you entered is invalid</string>
+    <string name="AreYouSureConfirm">Are you sure confirm this card</string>
+    <string name="Yes">Yes</string>
+
+    <string name="ValidThrough">Valid Thur</string>
+    <string name="Payment">Payment</string>
+    <string name="CardManagement">Card Management</string>
+    <string name="Delete">Delete</string>
+    <string name="DeleteCard">Are you sure to delete card</string>
+    <string name="SuccessDeleteCard">Successfully deleted card</string>
+    <string name="FailedMessage">Something went wrong, please try again</string>
+    <string name="CardAddeddMessage">Card added successfully</string>
+
+    <string-array name="Month">
+        <item>Month</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="Year">
+        <item>Year</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+    </string-array>
+
+    <string-array name="Timehour">
+        <item>Select Time</item>
+        <item>12:00 AM</item>
+        <item>12:15 AM</item>
+        <item>12:30 AM</item>
+        <item>12:45 AM</item>
+        <item>01:00 AM</item>
+        <item>01:15 AM</item>
+        <item>01:30 AM</item>
+        <item>01:45 AM</item>
+        <item>02:00 AM</item>
+        <item>02:15 AM</item>
+        <item>02:30 AM</item>
+        <item>02:45 AM</item>
+        <item>03:00 AM</item>
+        <item>03:15 AM</item>
+        <item>03:30 AM</item>
+        <item>03:45 AM</item>
+        <item>04:00 AM</item>
+        <item>04:15 AM</item>
+        <item>04:30 AM</item>
+        <item>04:45 AM</item>
+        <item>05:00 AM</item>
+        <item>05:15 AM</item>
+        <item>05:30 AM</item>
+        <item>05:45 AM</item>
+        <item>06:00 AM</item>
+        <item>06:15 AM</item>
+        <item>06:30 AM</item>
+        <item>06:45 AM</item>
+        <item>07:00 AM</item>
+        <item>07:15 AM</item>
+        <item>07:30 AM</item>
+        <item>07:45 AM</item>
+        <item>08:00 AM</item>
+        <item>08:15 AM</item>
+        <item>08:30 AM</item>
+        <item>08:45 AM</item>
+        <item>09:00 AM</item>
+        <item>09:15 AM</item>
+        <item>09:30 AM</item>
+        <item>9.:5 AM</item>
+        <item>10:00 AM</item>
+        <item>10:15 AM</item>
+        <item>10:30 AM</item>
+        <item>10:45 AM</item>
+        <item>11:00 AM</item>
+        <item>11:15 AM</item>
+        <item>11:30 AM</item>
+        <item>11:45 AM</item>
+        <item>12:00 PM</item>
+        <item>12:15 PM</item>
+        <item>01:00 PM</item>
+        <item>01:15 PM</item>
+        <item>01:30 PM</item>
+        <item>01:45 PM</item>
+        <item>02:00 PM</item>
+        <item>02:15 PM</item>
+        <item>02:30 PM</item>
+        <item>02:45 PM</item>
+        <item>03:00 PM</item>
+        <item>03:15 PM</item>
+        <item>03:30 PM</item>
+        <item>03:45 PM</item>
+        <item>04:45 PM</item>
+        <item>05:00 PM</item>
+        <item>05:15 PM</item>
+        <item>05:30 PM</item>
+        <item>05:45 PM</item>
+        <item>06:00 PM</item>
+        <item>06:15 PM</item>
+        <item>06:30 PM</item>
+        <item>06:45 PM</item>
+        <item>07:00 PM</item>
+        <item>07:15 PM</item>
+        <item>07:30 PM</item>
+        <item>07:45 PM</item>
+        <item>08:00 PM</item>
+        <item>08:15 PM</item>
+        <item>08:30 PM</item>
+        <item>08:45 PM</item>
+        <item>09:00 PM</item>
+        <item>09:15 PM</item>
+        <item>09:30 PM</item>
+        <item>09:45 PM</item>
+        <item>10:00 PM</item>
+        <item>10:15 PM</item>
+        <item>10:30 PM</item>
+        <item>10:45 PM</item>
+        <item>11:00 PM</item>
+        <item>11:15 PM</item>
+        <item>11:30 PM</item>
+        <item>11:45 PM</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+
+    <!-- LoginPage-->
+
+
+    <!--On Going Orders-->
+
+    <!--Order view-->
+
+    <!-- Profile-->
+
+    <!--  New order-->
+
+    <!--Map page-->
+
+    <!--Notification-->
+
+
+    <string name="txtorderplaced">YOUR ORDER IS PLACED</string>
+    <string name="txtPackageDispatched">YOUR PACKAGE IS DISPATCHED</string>
+    <string name="txtOnRoute">Order Picked Up \n\n<u>Track With Teliver</u></string>
+    <string name="txtOrderDeivered">Order T \'elivered</string>
+    <string name="txtInKitchen">Order Confirmed</string>
+    <string name="txtDeliveryDetails">YOUR DELIVERY DETAILS</string>
+    <string name="txtName">Name</string>
+    <string name="txtCart">Cart</string>
+    <string name="txtOrder">Order</string>
+    <string name="txtAddress">Delivery Address</string>
+    <string name="txtMobile">Mobile Number</string>
+    <string name="txtCartItems">YOUR ORDER ITEMS</string>
+    <string name="txtStartTracking">Start Tracking</string>
+    <string name="txtPaymentSuccess">Order Received</string>
+    <string name="txtOrderConfirmed">ORDER CONFIRMED</string>
+    <string name="txtTeliverId">The tracking id you received from Teliver, enter it to track your order</string>
+    <string name="txtNearYou">Near your Delivery Address (View in Maps)</string>
+    <string name="txtFoodHint">Hot and Tasty food will be on the way soon</string>
+    <string name="txtProcessing">Order Processing</string>
+    <string name="txtOutToDelivery">Your order is now out for delivery.Track your Order</string>
+    <string name="txtNearDoorPush">Your order has been confirmed by Restaurant. Soon it will be out for delivery.</string>
+    <string name="txtDeliveredPush">Your order has been delivered successfully.</string>
+    <string name="txtDeliveryAssigned">Order has been confirmed by Restaurant. Waiting for Delivery Agent</string>
+
+    <string name="txtSubTotal">Subtotal</string>
+    <string name="txtResPromo">Coupon Code</string>
+    <string name="txtTaxes">GST (18%)</string>
+    <string name="txtFinaltotal">You Paid</string>
+    <string name="symbolRupee">₹</string>
+    <string name="txtorderID">Order Id</string>
+    <string name="oderId">164752266</string>
+    <string name="txtPaymentMode">PAYMENT MODE</string>
+    <string name="paymentMode">CARD PAYMENT</string>
+    <string name="txtPackingCharge">Packaging Charge</string>
+    <string name="txtDeliveryCharge">Delivery Charge</string>
+
+
+    <!-- Location Page-->
+    <string name="welcome">Welcome!</string>
+    <string name="whatcan">what can</string>
+    <string name="weServeYou">we serve you</string>
+    <string name="today">today?</string>
+    <string name="searchByCity">Search By City</string>
+    <string name="SearchByRestaurant">Search By Restaurant</string>
+    <string name="searchByCuisine">Search By Cuisine</string>
+    <string name="selectRestaurant">Select Restaurant</string>
+    <string name="selectCuisine">Select Cuisine</string>
+    <string name="selectCity">Select City</string>
+    <string name="selectArea">Select Area</string>
+    <string name="search">Search</string>
+    <string name="searchMenu">Menu Search</string>
+    <string name="or">OR</string>
+    <string name="useCurrentLocation">Find Restaurant near me</string>
+    <string name="location">Shop</string>
+    <string name="basket">Basket</string>
+    <string name="orders">Orders</string>
+    <string name="favorite">Favourite</string>
+    <string name="account">Account</string>
+
+    <!-- Login Page-->
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="show">Show</string>
+    <string name="rememberMe">Remember Me</string>
+    <string name="forgotPassword">Forgot Password ?</string>
+    <string name="login">LOGIN</string>
+    <string name="oor">or</string>
+    <string name="socialAccount">Do you login with social account?</string>
+    <string name="faceBook">Login with FaceBook</string>
+    <string name="google">Login with Google</string>
+    <string name="newUser">New User?</string>
+    <string name="hide">Hide</string>
+
+    <!-- Signup Page-->
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="emailSmall">Email</string>
+    <string name="mobileNumbers">Mobile Number</string>
+    <string name="passwordSmall">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="referralCode">Referral Code</string>
+    <string name="signIn">SIGN IN</string>
+    <string name="signUp">SIGN UP</string>
+
+    <!-- More Page-->
+    <string name="more">More</string>
+    <string name="action">Actions</string>
+    <string name="profile">Profile</string>
+    <string name="myAddress">My Address</string>
+    <string name="changePassword">Change Password</string>
+    <string name="cardManagement">Card Management</string>
+    <string name="rewardPoint">Reward Points</string>
+    <string name="wallet">Wallet</string>
+    <string name="tableHistory">Table History</string>
+    <string name="info">INFO</string>
+    <string name="termsConditions">Terms &amp; Conditions</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="logout">Logout</string>
+
+
+    <!-- Profile Page-->
+    <string name="myProfile">My Profile</string>
+    <string name="changePhoto">Change photo</string>
+    <string name="phone">Phone</string>
+    <string name="update">Update</string>
+
+    <!-- Add Address Page-->
+    <string name="addressTitle">Village/Apartment/WorkPlace name</string>
+    <string name="doorNo">House No./Room No./Department name</string>
+    <string name="addressPhone">Address Phone</string>
+    <string name="address">Pin Map for your Location</string>
+    <string name="submit">Submit</string>
+
+    <!-- AddressBook Page-->
+    <string name="addAddress">Add Address</string>
+
+    <!-- Change Password Page-->
+    <string name="oldPassword">Old Password</string>
+    <string name="newPassword">New Password</string>
+
+    <!-- Add Card Page-->
+    <string name="cardholderName">Card Holder Name</string>
+    <string name="cardNumber">Card Number</string>
+    <string name="cardAddress">Enter Your Card Address</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="cvv">CVV</string>
+
+    <!-- Card Management Page-->
+    <string name="noCardAvail">No Card Available</string>
+
+    <!-- Custom add Card Page-->
+    <string name="saveMyCardDetails">Save My Card Details</string>
+    <string name="pay">Pay</string>
+    <string name="delete">Delete</string>
+
+    <!-- My Wallet Toolbar -->
+    <string name="walletHistory">Wallet History</string>
+    <string name="myBalance">My Balance</string>
+
+    <!-- Add Wallet Page -->
+    <string name="enterAmount">Enter Amount</string>
+    <!--<string name="add">Add</string>-->
+
+    <!-- Add Money to Wallet Page -->
+    <string name="addMoney">Add Money</string>
+    <string name="addAmount">Add Amount</string>
+    <string name="amount">Amount</string>
+    <string name="add">ADD</string>
+
+    <!-- Add to cart Page -->
+    <string name="menusize">Menu Size</string>
+    <string name="addons">Addons</string>
+    <string name="yourInstruction">Your instruction</string>
+    <string name="addToCart">Add to cart</string>
+    <string name="mainAdonName">ManiAdon Name</string>
+    <string name="minimumAndMaximum">Minimum : 5  maximum : 5</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Add toolbar Page -->
+    <string name="selectAPickupAddress">Select a Pickup Address</string>
+
+    <!-- base Home Page -->
+    <string name="restaurants">Restaurants</string>
+    <string name="order">Orders</string>
+
+    <!-- book table history Page -->
+    <string name="noTableHistory">NO Table History</string>
+    <!-- book table layout Page -->
+    <string name="name">Name</string>
+    <!-- cart details fragment -->
+    <string name="yourBasketisEmpty">Your basket is empty</string>
+    <string name="addSomething">Add something to make me happy :)</string>
+    <string name="selectYourChoice">SELECT YOUR CHOICE</string>
+    <string name="orderSummary">ORDER SUMMARY</string>
+    <string name="pickUp">Pickup</string>
+    <string name="delivery">Delivery</string>
+    <string name="addYourInstructions">Add your instructions</string>
+    <string name="restaurantBill">RESTAURANT BILL</string>
+    <string name="subTotal">Subtotal</string>
+    <string name="tax">Tax(0.00%)</string>
+    <string name="deliveryCharge">Delivery Charge</string>
+    <string name="free">Free</string>
+    <string name="discount">Discount(%10)</string>
+    <string name="voucher">Voucher</string>
+    <string name="redeemAmount">Redeem Amount </string>
+    <string name="totalPayable">TOTAL PAYABLE</string>
+    <string name="haveCouponCode">HAVE COUPON CODE</string>
+    <string name="EnteraCouponCodeHere">Enter a coupon code here...</string>
+    <string name="apply">Apply</string>
+    <string name="addMoreMenu">Add More Menu</string>
+    <string name="proceedToCheckout">Proceed to Checkout</string>
+
+    <!-- change Pickup Layout -->
+    <string name="select">SELECT</string>
+
+    <!-- change Pickup Layout -->
+    <string name="totalAmount">Total Amount</string>
+    <!-- common toolbar layout -->
+    <string name="restaurantList">Restaurants List</string>
+    <!-- common addons layout -->
+    <string name="mainAddons">Main addon</string>
+    <!-- custom checkout layout -->
+    <string name="selectYourCard">Select your card</string>
+    <string name="CardNumber">Card Number</string>
+    <string name="ValidThru">Valid Thru</string>
+    <string name="date">dd/mm/yyyy</string>
+
+    <string name="menuName">Menu names</string>
+    <!-- custom checkout layout -->
+    <string name="closed">CLOSED</string>
+    <!-- custom restaurant Type list -->
+    <string name="all">All</string>
+    <!-- custom spinner text list -->
+    <string name="selectTime">Select Time</string>
+    <!-- custom swipe card list -->
+    <string name="nocard">No Card</string>
+    <!-- custom Table History Screen -->
+    <string name="orderName">Order Number</string>
+    <string name="customerName">customer Name</string>
+    <string name="guestCount">Guest Count</string>
+    <string name="deliveryDate">Delivery date</string>
+    <string name="bookingEmail">Booking Email</string>
+    <string name="orderDate">Order Date</string>
+    <string name="orderTime">Order time</string>
+    <string name="bookingPhone">Booking phone</string>
+    <string name="restaurantname">Restaurant name</string>
+    <string name="bookingStatus">Booking Status</string>
+    <string name="bookingDate">Booking Date/Time</string>
+
+    <!-- Dialog for alert -->
+    <string name="alert">Alert!!</string>
+    <string name="exitTheApp">Are you sure want to exit the app...</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <!-- Dialog for alert Sub -->
+    <string name="notEnough">Subtotal not enough to apply voucher.Please increase the quantity!</string>
+    <string name="ok">OK</string>
+    <!-- Dialog for Choose Image -->
+    <string name="takeAPhoto">Take a photo</string>
+    <string name="fromGallery">Choose a photo from the gallery</string>
+    <!-- Dialog replace Cart -->
+    <string name="replaceCart">Replace cart item?</string>
+    <!-- FAvourite Screen -->
+    <!--<string name="favorite">Favorite</string>-->
+    <string name="favouriteList">Favourite List</string>
+    <string name="pleaseLoginOrRegister">Please login or register to see yours Favourites</string>
+    <string name="LoginOrRegister">Login or Register</string>
+    <string name="favoriteMenu">Favourite Menu</string>
+    <string name="FavoriteRestaurant">Favourite Restaurant</string>
+    <string name="noResult">No Result</string>
+    <string name="item">item</string>
+    <string name="ViewCart">VIEW CART</string>
+
+    <!-- foodOrdering Toolbar AddAddress -->
+    <string name="addressBook">Address Book</string>
+
+    <!-- forgot Password Screen -->
+    <string name="forgotPasswordTitle">Forgot Password</string>
+
+    <!-- Home Screen -->
+    <string name="filter">FILTER</string>
+    <string name="reset">Reset</string>
+    <string name="filterByOrder">FILTER BY ORDER</string>
+    <!--<string name="all">All</string>-->
+    <string name="Collection">Collection</string>
+    <string name="reserveTable">ReserveTable</string>
+    <!--<string name="delivery">Delivery</string>-->
+    <string name="filterByDistance">Filter by Distance</string>
+    <string name="filterByRating">FILTER BY RATING</string>
+    <string name="averageRating">Average Rating</string>
+    <string name="chooseYourCuisine">CHOOSE YOUR CUISINE</string>
+    <string name="applyFilter">Apply Filter</string>
+
+    <!-- info fragment Screen -->
+    <string name="openCloseTime">Open &amp; Close Timings</string>
+
+    <!-- layout Completed Screen -->
+    <string name="deliveredSuccessfull">Order delivered successfully</string>
+    <!-- Map Screen -->
+    <string name="searchByAddress">Search by Address</string>
+    <!--<string name="address">Address</string>-->
+    <string name="findRestaurant">Find Restaurant</string>
+    <!-- Menu Customer MainCategory Screen -->
+    <string name="deals">Deals</string>
+    <!-- My Wallet Custom Screen -->
+    <string name="purpose">Purpose</string>
+    <string name="dateName">Date</string>
+    <string name="transactionType">Transaction Type</string>
+    <string name="transactionDetails">Transaction Details</string>
+
+    <!--New CheckOut Screen -->
+    <string name="addressInfo">Address Info</string>
+    <string name="addNewAddress">ADD NEW ADDRESS</string>
+    <string name="enterNewAddress">Enter a new address to place order.</string>
+    <string name="selectDateAndTime">Select Date &amp; Time</string>
+    <string name="now">Now</string>
+    <string name="later">Later</string>
+    <!--<string name="wallet">Wallet</string>-->
+    <string name="useYourWallet">Using your wallet to pay</string>
+    <string name="loadMoney">LOAD MONEY</string>
+    <string name="loadMoneytoWallet">Load money to your wallet</string>
+    <string name="creaditAndDebit">Credit &amp; Debit Card</string>
+    <string name="addNewCard">ADD NEW CARD</string>
+    <string name="enterCardDetails">Enter your card details to pay</string>
+    <string name="payOnDelivery">Pay On Delivery</string>
+    <string name="cod">COD</string>
+    <string name="pleaseKeepExactChange">Please keep exact change in hand</string>
+    <string name="otherPayments">Other Payments</string>
+    <string name="paypal">PayPal</string>
+    <string name="proceed">Proceed</string>
+    <!--Order History custom -->
+    <string name="trackOrder">TrackOrder</string>
+    <string name="accepted">Accepted</string>
+    <string name="review">Review</string>
+    <!--Order History Screen -->
+    <string name="previousOrders">Previous Orders</string>
+    <string name="pleaseLoginOrRegisterRecentOrders">Please login or register to see yours recent orders</string>
+    <!--Order History Screen -->
+    <string name="trackOrderTitle">Track Order</string>
+    <!--Order View Screen -->
+    <string name="orderInformation">ORDER INFORMATION</string>
+    <string name="orderNumber">Order Number</string>
+    <string name="paymentType">Payment Type</string>
+    <string name="cashOnDelivery">Cash on Delivery</string>
+    <string name="orderType">Order Type</string>
+    <!--<string name="deliveryDate">Delivery date</string>-->
+    <string name="DeliveryTime">Delivery time</string>
+    <!--<string name="orderDate">Order Date</string>-->
+    <!--<string name="orderTime">Order time</string>-->
+    <string name="orderStatus">Order Status</string>
+    <string name="paymentStatus">Payment Status</string>
+    <string name="items">Items</string>
+    <string name="price">Price</string>
+    <string name="qty">Qty</string>
+    <string name="total">Total</string>
+    <string name="taxes">Tax</string>
+    <string name="tip">Tip</string>
+    <string name="restaurantInformation">RESTAURANT INFORMATION</string>
+    <string name="restaurantName">Restaurant Name</string>
+    <string name="restaurantAddress">Restaurant Address</string>
+    <string name="restaurantMobile">Restaurant Mobile</string>
+    <string name="customerinformation">CUSTOMER INFORMATION</string>
+    <string name="customerAddress">Customer Address</string>
+    <string name="customerMobile">Customer Mobile</string>
+    <string name="customerEmail">Customer Email</string>
+    <string name="instruction">INSTRUCTION</string>
+    <!--Payment Screen -->
+    <string name="cardStripe">Card( Stripe )</string>
+    <string name="newCards">New Cards</string>
+    <string name="savedCards">Saved Cards</string>
+    <string name="enterYourCardAddress">Enter Your Card Address</string>
+    <string name="postalCode">Postal Code</string>
+    <string name="saveCardoptional">Save Card (optional)</string>
+    <string name="enterTipAmount">Enter Tip Amount</string>
+    <!--Rating Dialog -->
+    <string name="yourReviewPlease">Your review please....</string>
+    <string name="yourMessage">Your message..</string>
+    <string name="rate">Rate</string>
+    <!--Restaurant Details Screen -->
+    <string name="categories">Categories</string>
+    <string name="minimumOrder">Minimum Order</string>
+    <string name="distance">Distance</string>
+    <string name="deliveryFee">Delivery Fee</string>
+    <string name="menu">Menu</string>
+    <string name="Info">Info</string>
+    <string name="offer">Offer</string>
+    <string name="rewards">Rewards</string>
+    <string name="yourOffers">Your Offers</string>
+    <string name="firstOffer">First Offer</string>
+    <string name="normalOffer">Normal Offer</string>
+    <string name="freeDelivery">Free Delivery</string>
+    <string name="customerReview">Customer Reviews</string>
+    <string name="yourReward">Your Reward</string>
+    <string name="rewardPoints">Reward point</string>
+    <string name="viewCart">VIEW CART</string>
+
+    <!--Restaurant List Screen -->
+    <string name="searchByName">Search by name</string>
+    <string name="filterByPromotion">FILTER BY PROMOTION</string>
+    <string name="chooseRestaurantType">CHOOSE RESTAURANT TYPE</string>
+    <!--Restaurant Menu Fragment -->
+    <string name="deal">Deal</string>
+    <string name="cart">cart</string>
+    <string name="bookATable">Book a Table</string>
+    <!--Restaurant offer Screen -->
+    <string name="offerIsAvailable">Yes Offer is Available</string>
+    <string name="noOfferFound">No Offer Found</string>
+    <!--Restaurant review Screen -->
+    <string name="noReviews">No Reviews</string>
+
+    <!--Java Java Java Java Java Java Java Java Java Java Java Java Java Java Java -->
+    <!--Login Fragment -->
+    <string name="pleaseEnterYourEmail">Please Enter Email</string>
+    <string name="PleaseEnterValidEmail">Please Enter Valid Email</string>
+    <string name="pleaseEnterYourPassword">Please Enter Password</string>
+    <string name="cantFetchEamil">We couldn\'t fetch your email address from Facebook. Please sign up regularly using your email address</string>
+    <!--Profile Screen -->
+    <string name="takePhoto">Take Photo</string>
+    <string name="chooseFromLibrary">Choose from Library</string>
+    <string name="pleaseEnterYourFirstName">Please enter First name</string>
+    <string name="pleaseEnterYourLastName">Please enter Last Name</string>
+    <string name="pleaseEnterPhoneNumber">Please enter phone number</string>
+    <!--Signup Screen -->
+    <string name="pleaseEnterConfirmPasssword">Please enter phone number</string>
+    <string name="passwordMismatch">Please enter phone number</string>
+    <!--Signup Screen -->
+    <string name="driverPosition">Driver Position</string>
+    <string name="currentPosition">Current Position</string>
+    <string name="permissionDenied">permission denied</string>
+    <!--BaseActivity Screen -->
+    <string name="OK">OK</string>
+    <string name="checkInternetConnection">Please Check Internet Connection!!!</string>
+    <string name="permissionNecessary">Permission necessary</string>
+    <string name="locationPermissionIsNecessary">Location permission is necessary</string>
+    <string name="externalStoragePermission">External storage permission is necessary</string>
+    <string name="camerPermissionIsNecessary">Camera permission is necessary</string>
+    <!--Launch Screen -->
+    <string name="LocationFeatureDenied">Permission Canceled, Now your application cannot access Location feature.</string>
+    <!--NewLocation Screen -->
+    <string name="pleaseChoooseAnotherLocation">Please Choose another location</string>
+    <string name="pleaseSelectAChoise">Please select a choice</string>
+    <string name="pleaseSelectCity">Please Select City</string>
+    <string name="selectSubdistric">Select Subdistrict</string>
+    <string name="noCitiesFound">No Cities found</string>
+    <string name="noRestaurantFound">No Restaurant found</string>
+    <string name="noCuisineFound">No Cuisine found</string>
+    <string name="gpsSettings">GPS settings</string>
+    <string name="gpsMessage">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="settings">Settings</string>
+
+    <!--CardDescription Screen -->
+    <string name="Tax">Tax(</string>
+    <string name="Delivery">delivery</string>
+    <string name="pickup">pickup</string>
+    <string name="loginToUseVoucher">Please login to use Vouchers</string>
+    <string name="enterVoucherCode">Please enter your voucher code</string>
+    <string name="restaurantMinimumOrder">Restaurant minimum order is </string>
+    <string name="Offer">Offer( </string>
+    <string name="subTotalNotEnough">Your subtotal is not enough.Please increase the Quantity!</string>
+    <string name="Voucher">Voucher(</string>
+    <string name="youWillEarn">You will earn </string>
+    <string name="points"> Points</string>
+    <string name="RedeemAmount">Redeem Amount ( </string>
+    <string name="voucherNotApplicable">voucher not applicable</string>
+    <string name="maximumAvailableQuantity">Maximum available quantity 25</string>
+    <string name="minimumQuantity">Minimum quantity should be 1</string>
+    <string name="maximumQuantityOnly">Maximum quantity 25 only</string>
+
+    <!--Checkout Screen -->
+    <string name="enterDate">please enter the date</string>
+    <string name="selecttime">please select the time</string>
+    <string name="selectFuture">please select future time</string>
+    <string name="selectYourAddress">please select your address</string>
+    <string name="anotherPaymentType">Please choose another payment type</string>
+    <string name="insufficientWalletAmount">Insufficient wallet amount</string>
+    <string name="limitIs3">Card add limit is 3 please delete one card and add</string>
+    <string name="selectAnyOnePayment">Please select any one payment type...</string>
+    <string name="addressInfoFree">Address Info ( Delivery Fee : </string>
+    <string name="Proceed">PROCEED</string>
+    <string name="orderPlacedSuccessfully">Your Order Placed Successfully!!!</string>
+    <string name="Pay">ชำระเงิน (</string>
+    <string name="paymentConfirmationInfo">Payment Confirmation info received from PayPal</string>
+    <string name="outOfDelivery"> ( Out of delivery )</string>
+    <!--AddAddress Screen -->
+    <string name="editAddress">Edit Address</string>
+    <string name="enterTitle">Please Pin Map for your Location</string>
+    <string name="enterDoorNumber">Please enter House No/Room No/Department</string>
+    <string name="enterAddress">Please enter Village/Apartment/Workplace name</string>
+    <!--AddCard Screen -->
+    <string name="addCard">Add Card</string>
+    <!--AddMoney Screen -->
+    <string name="enterTheAmount">Please enter the amount</string>
+    <string name="enterAmountGreater">Please enter the amount Greater than 0</string>
+    <string name="selectCard">Please select your card</string>
+    <string name="moneyAddSuccess">Money Added successfully</string>
+    <!--AddMoneyToWallet Screen -->
+    <string name="addWallet">Add Wallet</string>
+    <string name="noInternet">No internet Connection!!!</string>
+    <string name="cardsExisting">You can\'t save more than 3 cards, Please remove existing card or continue without saving a card details</string>
+    <string name="cardHolderName">Please enter card holder name</string>
+    <string name="expiryMonth">Please select expiry month</string>
+    <string name="expiryYear">Please select expiry year</string>
+    <string name="cvvNumber">Please enter cvv number</string>
+    <string name="cardNumberInvalid">The card number that you entered is invalid</string>
+    <string name="expirationdateInvalid">The expiration date that you entered is invalid</string>
+    <string name="CvvInvalid">The Cvv code that you entered is invalid</string>
+    <string name="cardDetailsInvalid">The card details that you entered are invalid</string>
+    <string name="selectedCard">You Selected this card</string>
+    <string name="useThisToPay">Use this to pay</string>
+    <!--AddressBook Screen -->
+    <string name="addressManagement">Address Management</string>
+    <string name="sureToDeleteAddress">Are you sure to delete address!!!</string>
+    <!--Card Management Screen -->
+    <string name="noCards">No cards to Show</string>
+    <string name="validTill">Valid till </string>
+    <string name="deleteCard">Delete Card</string>
+    <!--ChangePassword Screen -->
+    <string name="enterNewPassword">Please enter new password</string>
+    <string name="enterValidPassword">Please Enter valid password</string>
+    <string name="enterOldPassword">Please Enter old password</string>
+    <!--Info Screen -->
+    <string name="version">Version </string>
+
+    <string name="enterValidPhoneNumber">Please enter valid phone number</string>
+
+    <string name="edit">Edit</string>
+
+    <string name="RewardPoints">Reward Points</string>
+    <string name="earnedPoints">Earned Points : </string>
+
+    <string name="bookTableHistory">Book Table History</string>
+
+    <string name="paid">Paid</string>
+    <string name="unpaid">UnPaid</string>
+    <string name="pickedUp">Picked Up</string>
+    <string name="driver">Driver Accepted</string>
+    <string name="selectRating">Please select your rating</string>
+
+    <string name="routNotFound">Google can not find destination route</string>
+
+    <string name="choose">Choose </string>
+    <string name="selectAnyoneOfMenu">Please select anyone of menu </string>
+    <string name="Price"> price</string>
+    <string name="selectMinimumAddons">You should select minimum addons</string>
+    <string name="selectQuantity">Please select quantity</string>
+    <string name="menuAddedSuccessfully">Menu Added successfully</string>
+    <string name="minimum1">Minimum quantity should be 1</string>
+    <string name="minimum"> ( minimum : </string>
+    <string name="max"> maximum : </string>
+    <string name="selectMaximum">You can select maximum </string>
+    <string name="addonsOnly"> addons only</string>
+    <!--BookATable Screen -->
+    <string name="selectCount">please select the count</string>
+    <string name="selectDate">Please select the Date</string>
+    <string name="selectTiming">please select the timing</string>
+    <string name="enterCustomerNmae">please enter the customer Name</string>
+    <string name="enterCustomerEmail">please enter the customer email</string>
+    <string name="enterCustomerPhone">please enter the customer phone.no</string>
+    <string name="selectGuestCount">Select Guest Count</string>
+
+    <!--Favourite Screen -->
+    <string name="noFavouriteMenu">You have no Favorite Menus</string>
+    <string name="noFavouriteRestaurant">You have no Favorite Restaurants</string>
+    <string name="note">Note</string>
+    <string name="addedSomeItem">You have added some items in Cart, Do you want to go back and choose different restaurant?</string>
+    <string name="cartContainsDishes">Your cart contains dishes from </string>
+    <string name="doUWantToDiscard">. Do you want to discard the selection and add dishes from </string>
+    <!--Orderview Screen -->
+    <string name="orderview">Order View</string>
+    <string name="thankUNote">Thanks for placing your order with Pintogogo Your order was successfully sent to</string>
+    <string name="noData">"No data - update your profile</string>
+    <string name="cardFee">CardFee</string>
+    <string name="youEarned">You have earned </string>
+    <string name="pickupDate">Pickup Date</string>
+    <string name="pickupTime">Pickup Time</string>
+    <string name="deliverydate">Delivery Date</string>
+    <string name="deliveryTime">Delivery Time</string>
+    <string name="notpaid">Not Paid</string>
+
+    <!--RestaurantDetails Screen -->
+    <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Saturday">Saturday</string>
+    <string name="Sunday">Sunday</string>
+    <string name="flat">Flat </string>
+    <string name="orderAbove">% off on your first order, Make an order above </string>
+    <string name="makeAnOrder">Make an order above </string>
+    <string name="freeDeliveryOffer"> you get free delivery offer</string>
+    <string name="Closed">Closed</string>
+    <!--RestaurantList Screen -->
+    <string name="preOrder">PRE-ORDER</string>
+    <string name="yourFirstOrder">% off on your first order</string>
+    <string name="normalOfferText">% off on all your orders above</string>
+    <string name="freeDeliveryOrderAbove">Free delivery on </string>
+
+
+    <string name="reOrder">ReOrder</string>
+    <string name="time">Time</string>
+    <string name="register_as_partner_shop">Register as Partner Shop</string>
+    <string name="register_to_driver">Register to Driver</string>
+
+    <string name="failed">Failed</string>
+    <string name="driverAccepted">Driver Accepted</string>
+    <string name="waiting">Waiting</string>
+    <string name="delivered">Delivered</string>
+    <string name="collected">Collected</string>
+    <string name="pending">Pending</string>
+
+    <string name="asap">ASAP</string>
+    <string name="book_table">Book Table</string>
+    <string name="like">Like</string>
+    <string name="comments">Comments</string>
+
+    <string name="wantToEmptyCart">Your cart contains items from different restaurant, empty cart and continue?</string>
+
+    <!--<string name="pending">Pending</string>-->
+    <!--<string name="pending">Pending</string>-->
+
+</resources>

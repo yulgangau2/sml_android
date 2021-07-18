@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/checkout_toolbar"
+        />
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cardbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/card"
+            android:gravity="center_vertical"
+            android:text="@string/cardStripe"
+            android:drawablePadding="10dp"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/cardSelectRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:checkedButton="@+id/savedCardRadioButton"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/newCardRadioButton"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_buttons"
+                android:button="@null"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="@string/newCards"
+                android:textColor="@drawable/select_text_color_white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/savedCardRadioButton"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_buttons"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/savedCards"
+                android:textColor="@drawable/custom_text_color"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/allContentLayout"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/cardSelectRadioGroup"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/newcardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <EditText
+                    android:id="@+id/cardholderNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/CardHolderName"
+                    android:inputType="text"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/cardnumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/cardNumber"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:textSize="15sp"
+                    android:visibility="visible" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/cardAddressEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/enterYourCardAddress"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/postalCodeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/postalCode"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/monthSpinner"
+                    android:layout_width="match_parent"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/Month"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:entries="@array/Month"
+                    />
+
+                <Spinner
+                    android:id="@+id/yearSpinner"
+                    android:layout_width="match_parent"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/Year"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:entries="@array/Year"/>
+
+
+                <EditText
+                    android:id="@+id/cvvEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/CVV"
+                    android:inputType="numberPassword"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/savedCardsCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/saveCardoptional"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/savedCardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:visibility="visible">
+
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:background="@color/green_dark"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/circleindicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dip"
+                    android:layout_below="@+id/viewPager"
+                    app:fillColor="@color/colorPrimary"
+                    app:pageColor="#87888888"
+                    app:radius="3dp"
+                    app:strokeColor="#bf000000"
+                    app:strokeWidth="1dp" />
+
+                <TextView
+                    android:id="@+id/errorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nocard"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/tipsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/enterTipAmount"
+            android:digits="0123456789"
+            android:layout_below="@+id/allContentLayout"
+            android:inputType="number"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/paymentCheckoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:layout_below="@+id/tipsEditText"
+            android:text="@string/submit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/firstNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/firstName"
+                        android:inputType="textEmailAddress"
+                        android:textCursorDrawable="@drawable/text_cursor_cyan"
+                        app:met_baseColor="@color/black"
+                        android:textSize="13sp"
+                        app:met_floatingLabel="highlight"
+                        app:met_primaryColor="?colorAccent" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/lastNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lastName"
+                        android:inputType="textEmailAddress"
+                        android:textCursorDrawable="@drawable/text_cursor_cyan"
+                        app:met_baseColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        app:met_floatingLabel="highlight"
+                        app:met_primaryColor="?colorAccent" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/emailEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/emailSmall"
+                        android:inputType="textEmailAddress"
+                        android:textCursorDrawable="@drawable/text_cursor_cyan"
+                        app:met_baseColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        app:met_floatingLabel="highlight"
+                        app:met_primaryColor="?colorAccent" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/phoneEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="0123456789"
+                        android:hint="@string/mobileNumbers"
+                        android:inputType="number"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        android:textCursorDrawable="@drawable/text_cursor_cyan"
+                        app:met_baseColor="@color/black"
+                        app:met_floatingLabel="highlight"
+                        app:met_primaryColor="?colorAccent" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/passwordEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/forgotpasswordButton"
+                        android:hint="@string/passwordSmall"
+                        android:inputType="textPassword"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        android:textCursorDrawable="@drawable/text_cursor_cyan"
+                        app:met_baseColor="@color/black"
+                        app:met_floatingLabel="highlight"
+                        app:met_primaryColor="?colorAccent" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/confirmPasswordEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/forgotpasswordButton"
+                        android:hint="@string/confirmPassword"
+                        android:inputType="textPassword"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        android:textCursorDrawable="@drawable/text_cursor_cyan"
+                        app:met_baseColor="@color/black"
+                        app:met_floatingLabel="highlight"
+                        app:met_primaryColor="?colorAccent" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/referCodeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/forgotpasswordButton"
+                        android:hint="@string/referralCode"
+                        android:textSize="13sp"
+                        android:inputType="textCapCharacters"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="10dp"
+                        android:textCursorDrawable="@drawable/text_cursor_cyan"
+                        app:met_baseColor="@color/black"
+                        app:met_floatingLabel="highlight"
+                        app:met_primaryColor="?colorAccent" />
+
+
+                    <Button
+                        android:id="@+id/signinButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/button_bg"
+                        android:text="@string/signUp"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

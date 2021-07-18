@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/FoodTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backIconImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:padding="12dp"
+                android:src="@drawable/svg_go_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/backIconImageView"
+                android:fontFamily="@font/normal"
+                android:text="@string/categories"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/bookTableTV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:padding="13dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/book_a_table_icon"
+                />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/restaurantLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#F7F7F7">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/restaurantImageView"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/red_frame"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/restaurantNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/restaurantLayout"
+            android:singleLine="true"
+            android:fontFamily="@font/normal"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/restaurantItemsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurantNameTextView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/restaurantLayout"
+            android:singleLine="true"
+            android:fontFamily="@font/normal"
+            android:text=""
+            android:textSize="12sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurantItemsTextView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/restaurantLayout"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="5"
+            android:stepSize="0.01" />
+
+
+        <TextView
+            android:id="@+id/lineTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/restaurantLayout"
+            android:layout_marginTop="10dp"
+            android:background="@color/dividerlite" />
+
+
+        <RelativeLayout
+            android:id="@+id/priceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineTextView"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/mintext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Min."
+                android:fontFamily="@font/normal"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/miniorderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/mintext"
+                android:text="0.00"
+                android:fontFamily="@font/normal"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/distanceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/miniorderTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/distance"
+                android:singleLine="true"
+                android:fontFamily="@font/normal"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/distanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@+id/distanceText"
+                android:text="0.0ml"
+                android:fontFamily="@font/normal"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/deliveryFeesTextView"
+                android:fontFamily="@font/normal"
+                android:text="@string/deliveryFee"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/deliveryFeesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/free"
+                android:fontFamily="@font/normal"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/priceLayout"
+            android:background="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/restaurantMenuGroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/listLine"
+            android:background="@color/white"
+            android:checkedButton="@+id/menuButton"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/menuButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/restaurant_tab_buttons"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="12.5sp"
+                android:fontFamily="@font/normal"
+                android:text="@string/menu" />
+
+            <RadioButton
+                android:id="@+id/infoButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/restaurant_tab_buttons"
+                android:button="@null"
+                android:textSize="12.5sp"
+                android:gravity="center"
+                android:fontFamily="@font/normal"
+                android:text="@string/Info" />
+
+            <RadioButton
+                android:id="@+id/offerButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/restaurant_tab_buttons"
+                android:button="@null"
+                android:textSize="12.5sp"
+                android:gravity="center"
+                android:fontFamily="@font/normal"
+                android:text="@string/offer"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/reviewButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/restaurant_tab_buttons"
+                android:button="@null"
+                android:textSize="12.5sp"
+                android:fontFamily="@font/normal"
+                android:gravity="center"
+                android:text="@string/review"
+                android:visibility="visible" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/restaurantFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/restaurantMenuGroup"
+            android:background="@color/dim_dim_black"
+            android:divider="@android:color/transparent">
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/offerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/offerImageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/offer_icon_red" />
+
+            <TextView
+                android:id="@+id/offerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/offerImageView"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/listLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/offerLayout"
+            android:background="@color/dividerlite" />
+
+        <ListView
+            android:id="@+id/restaurantsMenuListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/cartLayout"
+            android:layout_below="@+id/listLine"
+            android:background="@color/dividerlite"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.2dp"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/cartLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="gone"
+
+            >
+
+            <ImageView
+                android:id="@+id/cartImageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/cart_icon" />
+
+            <TextView
+                android:id="@+id/cartCountTextView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/cart_round"
+                android:gravity="center"
+                android:text="11"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+
+            <View
+                android:id="@+id/lineVertical"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/cartImageView"
+                android:background="@color/dividerlite" />
+
+            <TextView
+                android:id="@+id/totalPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/lineVertical"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toLeftOf="@+id/redArrowButton"
+                android:background="@color/dividerlite" />
+
+            <Button
+                android:id="@+id/redArrowButton"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_bg"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/cart"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="170dp"
+    android:orientation="vertical"
+    android:background="@drawable/white_border">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/replaceCart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/normal"/>
+
+    <TextView
+        android:id="@+id/alertTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12.5sp"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/normal"
+        android:text="Your cart contains dishes from ABC .Do you want to discard the selection and add dishes fron New Amc"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/noButton"
+            android:layout_width="50dp"
+            android:layout_height="25sp"
+            android:text="@string/no"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:id="@+id/yesButton"
+            android:layout_width="50dp"
+            android:layout_height="25sp"
+            android:text="@string/yes"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

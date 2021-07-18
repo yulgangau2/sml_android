@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/menuNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/menuPriceTextView"
+        android:text="Biriyani(0)"
+        android:fontFamily="@font/normal"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/subAddonTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/menuPriceTextView"
+        android:layout_below="@+id/menuNameTextView"
+        android:text="addon1 + addon2 + addon3"
+        android:fontFamily="@font/normal"
+        android:textSize="12sp"
+         />
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subAddonTextView"
+        android:layout_marginLeft="10dp"
+        android:text="addon1 + addon2 + addon3"
+        android:fontFamily="@font/normal"
+        android:textSize="9sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/menuPriceTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:gravity="start"
+        android:fontFamily="@font/normal"
+        android:layout_toLeftOf="@+id/menuQuantityTextView"
+        android:text="0"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/menuQuantityTextView"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/totalPriceTextView"
+        android:text="2"
+        android:fontFamily="@font/normal"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="right"
+        android:fontFamily="@font/normal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textSize="12sp"
+        />
+
+</RelativeLayout>

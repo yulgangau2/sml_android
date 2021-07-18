@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/menuNameToolbar"
+        layout="@layout/common_toolbar"
+        />
+
+
+    <ListView
+        android:id="@+id/restaurantsSubMenuListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dividerlite"
+        android:layout_above="@+id/cartLayout"
+        android:layout_below="@+id/menuNameToolbar"
+        android:dividerHeight="0.2dp"
+        android:divider="@android:color/transparent" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f1f1"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backIconImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:padding="13dp"
+                android:src="@drawable/svg_go_back"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/actionBarTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/backIconImageView"
+                android:fontFamily="@font/normal"
+                android:padding="5dp"
+                android:text="@string/basket"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="0.00"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/emptyCartLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:src="@drawable/cart_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/normal"
+            android:text="@string/yourBasketisEmpty"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/normal"
+            android:text="@string/addSomething"
+            android:textSize="11sp" />
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:id="@+id/allContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f4f1f1"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="80dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@color/dim_dim_black"
+                    android:fontFamily="@font/normal"
+                    android:gravity="center|start"
+                    android:paddingLeft="15dp"
+                    android:text="@string/selectYourChoice"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/deliveryPickupRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:checkedButton="@+id/deliveryRadioButton"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pickupRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pickUp"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <RadioButton
+                        android:id="@+id/deliveryRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/delivery"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@color/dim_dim_black"
+                    android:fontFamily="@font/normal"
+                    android:gravity="center|start"
+                    android:paddingLeft="15dp"
+                    android:text="@string/orderSummary"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/restaurantNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Exampole Restaurant"
+                    android:textColor="@color/black"
+                    android:textSize="13.5sp" />
+
+                <TextView
+                    android:id="@+id/restaurantAddressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Exampole Restaurant"
+                    android:textSize="11sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/dim_dim_black" />
+
+                <ListView
+                    android:id="@+id/cartMenuListListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/dim_dim_black" />
+
+                <EditText
+                    android:id="@+id/instructionEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/normal"
+                    android:hint="@string/addYourInstructions"
+                    android:paddingBottom="13dp"
+                    android:paddingTop="13dp"
+                    android:textSize="13sp"
+                    android:visibility="visible">
+
+                    <requestFocus />
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@color/dim_dim_black"
+                    android:fontFamily="@font/normal"
+                    android:gravity="center|start"
+                    android:paddingLeft="15dp"
+                    android:text="@string/restaurantBill"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/normal"
+                        android:text="@string/subTotal"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/subTotalTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/medium"
+                        android:text="0.00"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/taxLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/dim_dim_black" />
+
+                    <TextView
+                        android:id="@+id/taxPercentageTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/normal"
+                        android:text="@string/tax"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/taxAmountTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/medium"
+                        android:gravity="right"
+                        android:text="2.00"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/deliveryChargLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingLeft="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/dim_dim_black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/normal"
+                        android:text="@string/deliveryCharge"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/deliveryChargeTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/removeFreeDeliveryButton"
+                        android:fontFamily="@font/medium"
+                        android:gravity="right"
+                        android:paddingRight="15dp"
+                        android:text="@string/free"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/removeFreeDeliveryButton"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:padding="12dp"
+                        android:src="@drawable/close_icon_black"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/offerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/dim_dim_black" />
+
+                    <TextView
+                        android:id="@+id/offerpercentTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/normal"
+                        android:text="@string/discount"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/offerPriceTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/medium"
+                        android:gravity="right"
+                        android:text="-0.00"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/voucherDetailLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingLeft="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/dim_dim_black" />
+
+                    <TextView
+                        android:id="@+id/voucherTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/normal"
+                        android:text="@string/voucher"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/voucehrPriceTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/removeVoucherButton"
+                        android:fontFamily="@font/medium"
+                        android:gravity="right"
+                        android:paddingRight="15dp"
+                        android:text="@string/free"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/removeVoucherButton"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:src="@drawable/close_icon_black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/dim_dim_black" />
+
+                <RelativeLayout
+                    android:id="@+id/redeemLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/dim_dim_black" />
+
+                    <TextView
+                        android:id="@+id/redeemPercentageTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/normal"
+                        android:text="Redeem Amount "
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/redeemAmountTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/medium"
+                        android:gravity="right"
+                        android:text=" - 2.00"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/dim_dim_black" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/medium"
+                        android:text="@string/totalPayable"
+                        android:textColor="#9B0B05"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/grandTotalTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/medium"
+                        android:gravity="right"
+                        android:text="000"
+                        android:textColor="#9B0B05"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@color/dim_dim_black"
+                    android:fontFamily="@font/normal"
+                    android:gravity="center|start"
+                    android:paddingLeft="15dp"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/voucherLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/couponImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/vouche_icon" />
+
+                    <TextView
+                        android:id="@+id/vocherText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/couponImageView"
+                        android:text="@string/haveCouponCode"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/voucherCodeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/voucherCheckButton"
+                        android:layout_toRightOf="@+id/couponImageView"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/normal"
+                        android:hint="@string/EnteraCouponCodeHere"
+                        android:padding="10dp"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/voucherCheckButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/normal"
+                        android:gravity="center"
+                        android:text="@string/apply"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@color/dim_dim_black"
+                    android:fontFamily="@font/normal"
+                    android:gravity="center|start"
+                    android:paddingLeft="15dp"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/earnPointsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/rewardImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/rewards"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        android:id="@+id/earnPointsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/rewardImageView"
+                        android:text="@string/rewardPoint"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@color/dim_dim_black"
+                    android:fontFamily="@font/normal"
+                    android:gravity="center|start"
+                    android:paddingLeft="15dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/addMoreMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+
+                    android:padding="15dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/contentLayout"
+                    android:text="@string/addMoreMenu"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/checkoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_bg"
+                android:text="@string/proceedToCheckout"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

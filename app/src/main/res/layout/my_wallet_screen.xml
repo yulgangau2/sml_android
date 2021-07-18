@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dividerlite"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/my_wallet_toolbar">
+
+    </include>
+
+
+    <ListView
+        android:id="@+id/mywalletListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dividerlite"
+        android:dividerHeight="5dp"
+        android:layout_margin="5dp"
+        android:divider="@android:color/transparent"/>
+</LinearLayout>

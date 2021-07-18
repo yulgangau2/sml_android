@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="20dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/typeCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layoutDirection="rtl"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:text="dfdfdfdfdf"
+        android:fontFamily="@font/normal"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>

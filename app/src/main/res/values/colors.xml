@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><!--#f26822-->
+    <color name="colorPrimary">#F26722</color>
+    <color name="colorPrimaryDark">#E26221</color>
+    <color name="colorAccent">#F26722</color>
+
+    <color name="cusine">#71000000</color>
+    <color name="black">#000000</color>
+    <color name="dimblack">#666666</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#ea1e1f</color>
+    <color name="brand_black_dim">#C8C8C8</color>
+    <color name="dividerlite">#E6E6E6</color>
+    <color name="startDim">#FFE4B9A4</color>
+    <color name="divider">#bbbaba</color>
+    <color name="dividerdark">#6f6f6f</color>
+    <color name="orange_button">#f36c24</color>
+    <color name="greenbutton">#7aa211</color>
+    <color name="button_color">#205E9E</color>
+    <color name="green_dark">#006600</color>
+    <color name="transparent">#00000000</color>
+    <color name="lineColor">#ed2564</color>
+    <color name="brand_black">#C9C9C9</color>
+    <color name="dim_dim_black">#EEEEEE</color>
+    <color name="dim_dim_orange">#F4F4F5</color><!--#f5dece-->
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#e91906</color>
+    <color name="colorGreen">#07af36</color>
+    <color name="colorOrange">#FF6D00</color>
+    <color name="colorHint">#e2e2e2</color>
+    <color name="colorLine">#b1b1b1</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBack">#d8f2efa7</color>
+    <color name="colorSecondaryText">#666060</color>
+    <color name="colorText">#817e7e</color>
+    <color name="colorDarkGreen">#057324</color>
+
+
+</resources>

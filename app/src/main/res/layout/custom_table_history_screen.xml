@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/orderInfoCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderInfo"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/bukingorderNo"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/orderName"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/coloOrderN0"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/bukingorderNo"
+                android:text=":"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bookingorderNoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/coloOrderN0"
+                android:text="ORD0980" />
+
+
+            <TextView
+                android:id="@+id/customerNameTextView"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bukingorderNo"
+                android:layout_marginTop="25dp"
+                android:text="@string/customerName"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/button_color"
+                android:layout_below="@+id/bukingorderNo"
+                />
+
+            <TextView
+                android:id="@+id/colanPaymentType"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coloOrderN0"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/customerNameTextView"
+                android:text=":"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/customerNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookingorderNoTV"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/colanPaymentType"
+                android:text="Archana" />
+
+
+            <TextView
+                android:id="@+id/deliveryType"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customerNameTextView"
+                android:layout_marginTop="10dp"
+                android:text="@string/guestCount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/colanDeliveryType"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/colanPaymentType"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/deliveryType"
+                android:text=":"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/GuestCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customerNameTV"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/colanDeliveryType"
+                android:text="5" />
+
+
+            <TextView
+                android:id="@+id/deliveryDate"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deliveryType"
+                android:layout_marginTop="10dp"
+                android:text="@string/deliveryDate"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/colanDeliveryDate"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/colanDeliveryType"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/deliveryDate"
+                android:text=":"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/deliveryDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/GuestCountTextView"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/colanDeliveryDate"
+                android:visibility="gone"
+                android:text="May 28, 2014 06:27" />
+
+
+            <TextView
+                android:id="@+id/deliveryTime"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deliveryDate"
+                android:layout_marginTop="10dp"
+                android:text="@string/bookingEmail"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/colanDeliveryTime"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/colanDeliveryDate"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/deliveryTime"
+                android:text=":"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bookingEmailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deliveryDateTextView"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/colanDeliveryTime"
+                android:text="archana@gmail.com" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookingEmailTextView"
+                android:layout_marginTop="10dp"
+                android:text="@string/orderDate"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookingEmailTextView"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/deliveryTime"
+                android:text=":"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/orderDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookingEmailTextView"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/colanDeliveryTime"
+                android:text="13.06.2016"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderDateTextView"
+                android:layout_marginTop="10dp"
+                android:text="@string/orderTime"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderDateTextView"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/deliveryTime"
+                android:text=":"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/orderTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderDateTextView"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/colanDeliveryTime"
+                android:text="06:27"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/ordeStatus"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderTimeTextView"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:text="@string/bookingPhone"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/colanordeStatus"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderTimeTextView"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/ordeStatus"
+                android:text=":"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/phoneNoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderTimeTextView"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/colanordeStatus"
+                android:text="1234567890" />
+
+            <TextView
+                android:id="@+id/storeNameTextview"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneNoTextView"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:text="@string/restaurantname"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/storeNameColon"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneNoTextView"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/ordeStatus"
+                android:text=":"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/storenameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneNoTextView"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/colanordeStatus"
+                android:text="Mohan Restaurant" />
+
+            <TextView
+                android:id="@+id/bukStatusTextview"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storeNameTextview"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:text="@string/bookingStatus"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bukStatusColon"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storeNameColon"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/ordeStatus"
+                android:text=":"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bukingStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storenameTextView"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/colanordeStatus"
+                android:text="Booked" />
+
+
+            <TextView
+                android:id="@+id/bukingDT"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bukStatusTextview"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:text="@string/bookingDate"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bukingDTColon"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bukStatusColon"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/ordeStatus"
+                android:text=":"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bukingDateTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bukingStatus"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/colanordeStatus"
+                android:text="2017-06-21 09:07:07" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

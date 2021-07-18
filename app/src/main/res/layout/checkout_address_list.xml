@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RadioButton
+        android:id="@+id/checkAddressButton"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Home Address"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:button="@drawable/checkout_radiobutton"
+        android:gravity="start|center"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="15dp"
+        android:layoutDirection="rtl"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"/>
+
+</RelativeLayout>

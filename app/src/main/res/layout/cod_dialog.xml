@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_add"
+        layout="@layout/add_toolbar" />
+
+
+    <ListView
+        android:id="@+id/cardListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_add"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"/>
+
+
+    <Button
+
+        android:id="@+id/selectPickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardListView"
+        android:layout_gravity="center"
+        android:background="@color/button_color"
+        android:text="@string/select"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

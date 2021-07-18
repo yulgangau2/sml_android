@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/purposeText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/purpose"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/purposeDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/purposeText"
+            android:padding="5dp"
+            android:text=":"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/purposeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/purposeDot"
+            android:padding="5dp"
+            android:text="Purpose"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/purposeTextView"
+            android:padding="5dp"
+            android:text="@string/dateName"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/purposeTextView"
+            android:layout_toRightOf="@+id/purposeText"
+            android:padding="5dp"
+            android:text=":"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/purposeTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/purposeDot"
+            android:padding="5dp"
+            android:text="Purpose"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTextView"
+            android:padding="5dp"
+            android:text="@string/amount"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTextView"
+            android:layout_toRightOf="@+id/purposeText"
+            android:padding="5dp"
+            android:text=":"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/amountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/purposeDot"
+            android:padding="5dp"
+            android:text="Purpose"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amountTextView"
+            android:padding="5dp"
+            android:text="@string/transactionType"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amountTextView"
+            android:layout_toRightOf="@+id/purposeText"
+            android:padding="5dp"
+            android:text=":"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/transactionTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amountTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/purposeDot"
+            android:padding="5dp"
+            android:text="Purpose"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transactionTypeTextView"
+            android:padding="5dp"
+            android:text="@string/transactionDetails"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transactionTypeTextView"
+            android:layout_toRightOf="@+id/purposeText"
+            android:padding="5dp"
+            android:text=":"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/transactionDetailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transactionTypeTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/purposeDot"
+            android:padding="5dp"
+            android:text="Purpose"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

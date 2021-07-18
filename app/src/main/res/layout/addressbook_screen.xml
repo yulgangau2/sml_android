@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/foodordering_toolbar_addaddress" />
+
+    <RelativeLayout
+        android:id="@+id/noAddressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/noReviewIV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/no_address_icon"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/noReviewTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noReviewIV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/addAddress"
+            android:textSize="25sp"
+            android:textColor="#C8C8C8" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/addressListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:divider="@android:color/transparent"
+        android:visibility="visible"
+        />
+
+
+</RelativeLayout>

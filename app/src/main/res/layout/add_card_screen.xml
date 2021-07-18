@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/allContentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/cardSelectRadioGroup">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+    <LinearLayout
+        android:id="@+id/newcardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/cardholderNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/cardholderName"
+            android:inputType="text"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp"
+            app:met_baseColor="@color/black"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?colorAccent" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/cardnumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:digits="0123456789"
+            android:hint="@string/cardNumber"
+            android:maxLength="20"
+            android:inputType="number"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp"
+            app:met_baseColor="@color/black"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?colorAccent" />
+
+        <AutoCompleteTextView
+            android:id="@+id/cardAddressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/cardAddress"
+            android:inputType="text"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/monthSpinner"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/Month"
+            android:hint="@string/month"
+            android:inputType="text"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/yearSpinner"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/Year"
+            android:hint="@string/year"
+            android:inputType="text"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/cvvEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:digits="0123456789"
+            android:hint="@string/cvv"
+            android:inputType="numberPassword"
+            android:maxLength="3"
+            android:fontFamily="@font/normal"
+            android:textSize="13sp"
+            app:met_baseColor="@color/black"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?colorAccent" />
+
+        <Button
+            android:id="@+id/addCardButton"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/submit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/bold"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

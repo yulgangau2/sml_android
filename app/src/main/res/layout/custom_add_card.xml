@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/NewCardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/cardNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:fontFamily="@font/normal"
+                android:textSize="13sp"
+                android:digits="0123456789"
+                android:hint="@string/cardNumber"
+                android:inputType="phone"/>
+
+            <EditText
+                android:id="@+id/cardHoldernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardNumberEditText"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/normal"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:hint="@string/cardholderName"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:id="@+id/validthurLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/cardHoldernameEditText"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/expiryMonthSpinner"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/normal"
+                    android:textSize="13sp"
+                    android:entries="@array/Month" />
+
+                <Spinner
+                    android:id="@+id/expiryYearSpinner"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/normal"
+                    android:textSize="13sp"
+                    android:entries="@array/Year" />
+
+                <EditText
+                    android:id="@+id/CvvEditText"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cvv"
+                    android:digits="0123456789"
+                    android:singleLine="true"
+                    android:fontFamily="@font/normal"
+                    android:textSize="13sp"
+                    android:inputType="number" />
+            </LinearLayout>
+
+
+            <CheckBox
+                android:id="@+id/saveCardDetailsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/validthurLayout"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/normal"
+                android:textSize="13sp"
+                android:text="@string/saveMyCardDetails" />
+
+            <Button
+                android:id="@+id/newCardPayButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/saveCardDetailsCheckBox"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:fontFamily="@font/bold"
+                android:text="@string/pay"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

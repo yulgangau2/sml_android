@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/noTableSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/book_table_border"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat" />
+
+            <LinearLayout
+                android:id="@+id/dateTimeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noTableSpinner"
+                android:layout_marginTop="20dp"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/book_table_border"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dateET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:padding="10dp"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/black"
+                         />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:src="@drawable/svg_calender_icon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/book_table_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/timeSpin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                       />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/bookNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateTimeLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/normal"
+                android:background="@drawable/book_table_border"
+                android:hint="@string/name"
+                android:paddingLeft="10dp"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/bookEmailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookNameET"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/normal"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/book_table_border"
+                android:hint="@string/emailSmall"
+                android:paddingLeft="10dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/bookPhoneET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/bookEmailET"
+                android:layout_alignStart="@+id/bookEmailET"
+                android:layout_below="@+id/bookEmailET"
+                android:layout_marginTop="20dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/normal"
+                android:background="@drawable/book_table_border"
+                android:hint="@string/phone"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/bookInsET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookPhoneET"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/normal"
+                android:background="@drawable/book_table_border"
+                android:hint="@string/yourInstruction"
+                android:textColorHint="@color/divider"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="50dp"/>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/bookInsET"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:text="@string/submit"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

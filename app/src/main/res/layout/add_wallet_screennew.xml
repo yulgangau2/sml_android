@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/my_wallet_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/addWalletBalaneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RadioGroup
+            android:id="@+id/amountRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/price_radio_button"
+                android:gravity="center"
+                android:textColor="@drawable/price_radio_text_color"
+                android:text="100" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/price_radio_button"
+                android:textColor="@drawable/price_radio_text_color"
+                android:gravity="center"
+                android:text="200" />
+
+            <RadioButton
+                android:id="@+id/radio5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/price_radio_button"
+                android:textColor="@drawable/price_radio_text_color"
+                android:gravity="center"
+                android:text="500" />
+
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/amountEditText"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/addWalletRadioGroup"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:fontFamily="@font/normal"
+            android:hint="@string/enterAmount"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/addWalletButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/add"
+            android:fontFamily="@font/bold"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/stripCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/circleindicator"
+            android:layout_marginTop="10dp" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/circleindicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/submitButton"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dip"
+            app:fillColor="@color/colorPrimary"
+            app:pageColor="#87888888"
+            app:radius="6dp"
+            app:strokeColor="#bf000000"
+            app:strokeWidth="1dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

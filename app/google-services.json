@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "98351839488",
+    "firebase_url": "https://fir-eatyhero.firebaseio.com",
+    "project_id": "firebase-eatyhero",
+    "storage_bucket": "firebase-eatyhero.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98351839488:android:f75ac2cf0b3b5b71",
+        "android_client_info": {
+          "package_name": "com.eatyhero.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98351839488-iofb1p3b8fid746fnh0f3v0t9poj3tod.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eatyhero.customer",
+            "certificate_hash": "1a24474e72ccf4b3ec28f60759f7fd1a569f5b67"
+          }
+        },
+        {
+          "client_id": "98351839488-b3upu3v99rb69o6mm72bfa2utosvil7d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eatyhero.customer",
+            "certificate_hash": "d87b4bd66ec05cf4d7f527cf510706a21a2e79a0"
+          }
+        },
+        {
+          "client_id": "98351839488-1mn1e91ha3dihujs2v0kf174741vs1hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf6b0Ho-bapdFIsSa-xuzaUCxWwIXb5mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98351839488-1mn1e91ha3dihujs2v0kf174741vs1hk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98351839488:android:82066aec71780b99",
+        "android_client_info": {
+          "package_name": "com.eatyhero.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98351839488-1mn1e91ha3dihujs2v0kf174741vs1hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf6b0Ho-bapdFIsSa-xuzaUCxWwIXb5mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98351839488-1mn1e91ha3dihujs2v0kf174741vs1hk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98351839488:android:f7d4623f55088ffd",
+        "android_client_info": {
+          "package_name": "com.eatyhero.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98351839488-1mn1e91ha3dihujs2v0kf174741vs1hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf6b0Ho-bapdFIsSa-xuzaUCxWwIXb5mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98351839488-1mn1e91ha3dihujs2v0kf174741vs1hk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

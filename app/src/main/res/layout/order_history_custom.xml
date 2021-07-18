@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/orderIdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:padding="10dp"
+                android:text="ORD123456"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/trackOrderTextView"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@color/black"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/trackOrder"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/orderStatusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:text="@string/accepted"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/orderStatusTextView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:background="#1c000000" />
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="10000.00"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/restaurantTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_below="@+id/line"
+                android:layout_centerHorizontal="true"
+                android:text="@string/restaurantname"
+                android:textSize="12sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_toRightOf="@+id/priceTextView"
+                android:layout_toLeftOf="@+id/paymentTypeImageView"/>
+
+            <TextView
+                android:id="@+id/paymentTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/paymentTypeImageView"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="@string/cod"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/paymentTypeImageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/line"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/paymentStatusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/paymentTypeTextView"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="true"
+                android:text="PAID"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/bottomline"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/paymentStatusTextView"
+                android:layout_marginTop="5dp"
+                android:background="#56989898"/>
+            <TextView
+                android:id="@+id/deliveryTypeTextView"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:layout_below="@+id/bottomline"
+                android:layout_alignParentLeft="true"
+                android:text="@string/delivery"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/reviewTextView"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_below="@+id/bottomline"
+                android:layout_centerHorizontal="true"
+                android:text="@string/review"
+                android:textSize="13dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bottomline"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:stepSize="1"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/reOrderTextView"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@+id/bottomline"
+                android:layout_alignParentRight="true"
+                android:text="@string/reOrder"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+ 

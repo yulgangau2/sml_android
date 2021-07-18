@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar" />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/allContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/orderTrack"
+        android:layout_below="@+id/toolbar"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EEEEEE"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/successMessageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/normal"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/greenbutton"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orderInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/normal"
+                android:text="@string/orderInformation"
+                android:layout_below="@+id/successMessageTextView"
+                android:textAllCaps="true"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:id="@+id/orderInfoCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderInfo"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/gray_white_border"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/orderNo"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/orderNumber"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/coloOrderN0"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/orderNo"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderNoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/coloOrderN0"
+                    android:fontFamily="@font/normal"
+                    android:text="ORD0980"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/paymentType"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderNo"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/paymentType"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/colanPaymentType"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/coloOrderN0"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/paymentType"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/paymentTypeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderNoTextView"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/colanPaymentType"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/cashOnDelivery"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/deliveryType"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/paymentType"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/orderType"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/colanDeliveryType"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/colanPaymentType"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/deliveryType"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deliveryTypeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/paymentTypeTextView"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/colanDeliveryType"
+                    android:fontFamily="@font/normal"
+                    android:text="Delivery"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/deliveryDate"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deliveryType"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/deliveryDate"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/colanDeliveryDate"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/colanDeliveryType"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/deliveryDate"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deliveryDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deliveryTypeTextView"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/colanDeliveryDate"
+                    android:fontFamily="@font/normal"
+                    android:text="May 28, 2014 06:27"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/deliveryTime"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deliveryDate"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/DeliveryTime"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/colanDeliveryTime"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/colanDeliveryDate"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/deliveryTime"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deliveryTimeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deliveryDateTextView"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/colanDeliveryTime"
+                    android:fontFamily="@font/normal"
+                    android:text="06:27"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deliveryTimeTextView"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/orderDate"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deliveryTimeTextView"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/deliveryTime"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/orderDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deliveryTimeTextView"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/colanDeliveryTime"
+                    android:fontFamily="@font/normal"
+                    android:text="13.06.2016"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderDateTextView"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/orderTime"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderDateTextView"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/deliveryTime"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/orderTimeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderDateTextView"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/colanDeliveryTime"
+                    android:fontFamily="@font/normal"
+                    android:text="06:27"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/ordeStatus"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderTimeTextView"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/orderStatus"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/colanordeStatus"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderTimeTextView"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/ordeStatus"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ordeStatusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderTimeTextView"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/colanordeStatus"
+                    android:fontFamily="@font/normal"
+                    android:text="Delivered"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ordeStatusTextView"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/paymentStatus"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ordeStatusTextView"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/ordeStatus"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/paymentStatusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ordeStatusTextView"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/colanordeStatus"
+                    android:fontFamily="@font/normal"
+                    android:text="Delivered"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/payinfoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/gray_white_border"
+                android:layout_below="@+id/orderInfoCardView">
+
+                <RelativeLayout
+                    android:id="@+id/titleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/items"
+                        android:textColor="@color/red"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@+id/qTYTitle"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/price"
+                        android:textColor="@color/red"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/qTYTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/totalTitle"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/qty"
+                        android:textColor="@color/red"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/totalTitle"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="@string/total"
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/orderMenuListListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleLayout"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp" />
+
+                <View
+                    android:id="@+id/orderMenuListViewLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/orderMenuListListView"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderMenuListViewLine"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/colanSbtotal"
+                    android:gravity="right"
+                    android:padding="2dp"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/medium"
+                    android:text="@string/subTotal" />
+
+                <TextView
+                    android:id="@+id/colanSbtotal"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderMenuListViewLine"
+                    android:layout_toLeftOf="@+id/subTotalTextView"
+                    android:padding="2dp"
+                    android:text="-"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subTotalTextView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/orderMenuListViewLine"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:padding="2dp"
+                    android:paddingRight="2dp"
+                    android:text="120" />
+
+
+                <RelativeLayout
+                    android:id="@+id/cardFeeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subTotalTextView">
+
+                    <TextView
+                        android:id="@+id/cardFeeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/colanCaedfee"
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/medium"
+                        android:text="@string/deliveryCharge" />
+
+                    <TextView
+                        android:id="@+id/colanCaedfee"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/cardFeeTextView"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cardFeeTextView"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:layout_marginRight="5dp"
+                        android:paddingRight="2dp"
+                        android:text="2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/deliveryChargLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardFeeLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/colanDeliveyCharge"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/medium"
+                        android:padding="2dp"
+                        android:text="@string/deliveryCharge" />
+
+                    <TextView
+                        android:id="@+id/colanDeliveyCharge"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/deliveryChargeTextView"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/deliveryChargeTextView"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:paddingRight="2dp"
+                        android:layout_marginRight="5dp"
+                        android:text="2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/hstLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deliveryChargLayout">
+
+                    <TextView
+                        android:id="@+id/taxPercentTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/colanTaxPercent"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/medium"
+                        android:padding="2dp"
+                        android:text="@string/taxes" />
+
+                    <TextView
+                        android:id="@+id/colanTaxPercent"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/taxAmountTextView"
+                        android:padding="2dp"
+                        android:text="-"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/taxAmountTextView"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingRight="2dp"
+                        android:text="2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tipsChargLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/voucherChargLayout"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/colanTip"
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/medium"
+                        android:text="@string/tip" />
+
+                    <TextView
+                        android:id="@+id/colanTip"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/tipTextView"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tipTextView"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:layout_marginRight="5dp"
+                        android:paddingRight="2dp"
+                        android:text="2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/offerChargLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hstLayout"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/offerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/colanOffer"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/medium"
+                        android:padding="2dp"
+                        android:text="@string/tip" />
+
+                    <TextView
+                        android:id="@+id/colanOffer"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/OfferTextView"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/OfferTextView"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:paddingRight="2dp"
+                        android:layout_marginRight="5dp"
+                        android:text="2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/voucherChargLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offerChargLayout"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/voucherText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/colanvoucher"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/medium"
+                        android:padding="2dp"
+                        android:text="@string/tip" />
+
+                    <TextView
+                        android:id="@+id/colanvoucher"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/voucherTextView"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/voucherTextView"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:paddingRight="2dp"
+                        android:layout_marginRight="5dp"
+                        android:text="2" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/redeemTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tipsChargLayout"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/colanTotaltitle"
+                    android:fontFamily="@font/medium"
+                    android:gravity="right"
+                    android:padding="2dp"
+                    android:text="@string/redeemAmount"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/colanredeemtitle"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tipsChargLayout"
+                    android:layout_toLeftOf="@+id/grandTotalTextView"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="2dp"
+                    android:text="-"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/redeemAmountTextView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tipsChargLayout"
+                    android:fontFamily="@font/medium"
+                    android:gravity="right"
+                    android:padding="2dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingRight="2dp"
+                    android:text="0"
+                    android:textSize="13sp" />
+                //////////////////////////////////////////////////////////////////
+
+                <TextView
+                    android:id="@+id/totaltitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/redeemTitle"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/colanTotaltitle"
+                    android:fontFamily="@font/medium"
+                    android:gravity="right"
+                    android:padding="2dp"
+                    android:text="@string/total"
+                    android:textColor="@color/red"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/colanTotaltitle"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/redeemTitle"
+                    android:layout_toLeftOf="@+id/grandTotalTextView"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="2dp"
+                    android:text="-"
+                    android:textColor="@color/red"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/grandTotalTextView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/redeemTitle"
+                    android:fontFamily="@font/medium"
+                    android:gravity="right"
+                    android:padding="2dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingRight="2dp"
+                    android:text="0"
+                    android:textColor="@color/red"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/earnpointsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/payinfoTextView"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/gray_white_border"
+                android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/rewardImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/rewards"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        android:id="@+id/rewardTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/rewardImageView"
+                        android:text="@string/rewardPoint"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/restaurantInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/earnpointsLayout"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/normal"
+                android:text="@string/restaurantInformation"
+                android:textAllCaps="true"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:id="@+id/restaurantInfoCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/restaurantInfo"
+                android:layout_margin="10dp"
+                android:background="@drawable/gray_white_border"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/restaurantName"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/restaurantname"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/colanRestaurantName"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/restaurantName"
+                    android:fontFamily="@font/normal"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/restaurantNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/colanRestaurantName"
+                    android:fontFamily="@font/normal"
+                    android:text="Sarathkumar"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                />
+
+                <RelativeLayout
+                    android:id="@+id/restaurantAddressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantNameTextView"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/restaurantAddress"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/normal"
+                        android:text="@string/restaurantAddress"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/colanRestaurantAddress"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/restaurantAddress"
+                        android:text=":"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/restaurantAddressTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/colanRestaurantAddress"
+                        android:fontFamily="@font/normal"
+                        android:text="Newyork,wall street,washington,Newyork,wall street,washington"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/restaurantMobile"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantAddressLayout"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/restaurantMobile"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/colanRestaurantMobile"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantAddressLayout"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/restaurantMobile"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/restaurantMobileTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantAddressLayout"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/calliconimageview"
+                    android:fontFamily="@font/normal"
+                    android:text="9944760909"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/calliconimageview"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/restaurantAddressLayout"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/colanRestaurantMobile"
+                    android:src="@drawable/call_icon_svg"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/customerInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/restaurantInfoCardView"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/normal"
+                android:text="@string/customerinformation"
+                android:textAllCaps="true"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:id="@+id/customerInfoCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customerInfo"
+                android:layout_margin="10dp"
+                android:background="@drawable/gray_white_border"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/customerName"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/customerName"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/colanCusName"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/customerName"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/customerNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/colanCusName"
+                    android:fontFamily="@font/normal"
+                    android:text="Sarathkumar"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:id="@+id/customerAddressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/colanCusName"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/customerAddress"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/normal"
+                        android:text="@string/customerAddress"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/colanCusAddress"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/customerAddress"
+                        android:text=":"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/customerAddressTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/colanCusAddress"
+                        android:fontFamily="@font/normal"
+                        android:text="Newyork,wall street,washington,Newyork,wall street,washington"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/customerMobile"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerAddressLayout"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/customerMobile"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/colanCusMobile"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerAddressLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/customerMobile"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/customerMobileNoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerAddressLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/colanCusMobile"
+                    android:fontFamily="@font/normal"
+                    android:text="9944760909"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/customerEmail"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerMobileNoTextView"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/normal"
+                    android:text="@string/customerEmail"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerMobileNoTextView"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/customerEmail"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/customerEmailTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerMobileNoTextView"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/colanCusMobile"
+                    android:fontFamily="@font/normal"
+                    android:text="sarathkumar.t@roamsoft.in"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/instructionInfo"
+                android:layout_below="@+id/customerInfoCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/normal"
+                android:text="@string/instruction"
+                android:visibility="gone"
+                android:textAllCaps="true"
+                android:textSize="13sp"  />
+
+                <TextView
+                    android:id="@+id/instructionInfoTextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/instructionInfo"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/gray_white_border"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:text="test orders" />
+
+            <TextView
+                android:id="@+id/failedReasonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instructionInfoTextview"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/normal"
+                android:text="Failed REASON"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:layout_marginStart="15dp" />
+
+            <TextView
+                android:id="@+id/failedReasonTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/failedReasonText"
+                android:layout_margin="10dp"
+                android:background="@drawable/gray_white_border"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:visibility="gone"
+                android:text="test orders" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/orderTrack"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/btnTxtTracker"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

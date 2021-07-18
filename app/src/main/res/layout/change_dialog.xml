@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        >
+
+    <RadioButton
+        android:id="@+id/selectAddressRB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/addTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/selectAddressRB"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="Home"
+        android:textStyle="bold"
+        android:visibility="gone"
+
+        />
+    <TextView
+        android:id="@+id/addFlatNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No.243"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_below="@+id/selectAddressRB"
+        android:layout_marginLeft="15dp"
+
+        />
+
+    <TextView
+        android:id="@+id/addAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M.V.M Nagar DGL"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_below="@+id/addFlatNo"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:id="@+id/addLandmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="near Mall"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/addAddress"
+        android:layout_marginLeft="15dp"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>
